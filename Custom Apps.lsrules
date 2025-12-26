@@ -461,11 +461,13 @@
     },
     {
       "action" : "allow",
+      "ports" : "3478",
       "process" : "identifier.57T9237FN3\/net.whatsapp.WhatsApp.ServiceExtension",
       "remote-addresses" : "*.*.*.*"
     },
     {
       "action" : "allow",
+      "ports" : "443",
       "process" : "identifier.57T9237FN3\/net.whatsapp.WhatsApp.ServiceExtension",
       "remote-addresses" : "*.*.*.*"
     },
