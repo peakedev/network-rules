@@ -461,18 +461,17 @@
     },
     {
       "action" : "allow",
+      "ports" : "3478",
       "process" : "identifier.57T9237FN3\/net.whatsapp.WhatsApp.ServiceExtension",
-      "remote-addresses" : "179.60.192.0-179.60.195.255"
+      "protocol" : "tcp",
+      "remote-addresses" : "*.*.*.*"
     },
     {
       "action" : "allow",
+      "ports" : "443",
       "process" : "identifier.57T9237FN3\/net.whatsapp.WhatsApp.ServiceExtension",
-      "remote-addresses" : "157.240.*.*"
-    },
-    {
-      "action" : "allow",
-      "process" : "identifier.57T9237FN3\/net.whatsapp.WhatsApp.ServiceExtension",
-      "remote-addresses" : "57.144.0.0-57.147.255.255"
+      "protocol" : "tcp",
+      "remote-addresses" : "*.*.*.*"
     },
     {
       "action" : "allow",
@@ -521,18 +520,15 @@
       "remote-domains" : "adobe.io"
     },
     {
-      "action" : "deny",
-      "process" : "identifier.57T9237FN3\/net.whatsapp.WhatsApp",
-      "remote-addresses" : "212.68.207.*"
-    },
-    {
-      "action" : "allow",
-      "process" : "identifier.57T9237FN3\/net.whatsapp.WhatsApp",
-      "remote-addresses" : "57.144.0.0-57.147.255.255"
-    },
-    {
       "action" : "allow",
       "ports" : "443",
+      "process" : "identifier.57T9237FN3\/net.whatsapp.WhatsApp",
+      "protocol" : "tcp",
+      "remote-addresses" : "*.*.*.*"
+    },
+    {
+      "action" : "allow",
+      "ports" : "3478",
       "process" : "identifier.57T9237FN3\/net.whatsapp.WhatsApp",
       "protocol" : "tcp",
       "remote-addresses" : "*.*.*.*"
