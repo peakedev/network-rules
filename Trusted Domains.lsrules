@@ -1,0 +1,174 @@
+{
+  "description" : "Trusted domains for all apps\/processes",
+  "name" : "Trusted Domains",
+  "rules" : [
+    {
+      "action" : "allow",
+      "remote-domains" : "adobe.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "microsoft.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "skype.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "acrobat.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "adobe.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "adobe.io"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "adobecc.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "adobecces.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "adobeccstatic.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "adobedc.net"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "adobedtm.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "adobelogin.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "adobeoobe.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "adobesc.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "adobess.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "appcenter.ms"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "azurefd.net"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "cloud.microsoft"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "digicert.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "eboxenterprise.be"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "eurocert.pl"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "github.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "gmail.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "istatmenus.app"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "live.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "me.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "microsoft.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "microsoftonline.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "msauth.net"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "obdev.at"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "office.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "office.net"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "office365.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "omtrdc.net"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "peake.be"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "sfx.ms"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "sharepoint.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "skype.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "static.microsoft"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "ui.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "windows.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "windows.net"
+    }
+  ]
+}
