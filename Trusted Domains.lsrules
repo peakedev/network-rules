@@ -8,6 +8,10 @@
     },
     {
       "action" : "allow",
+      "remote-domains" : "outlook.com"
+    },
+    {
+      "action" : "allow",
       "remote-domains" : "google.com"
     },
     {
