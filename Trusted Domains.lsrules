@@ -28,6 +28,14 @@
     },
     {
       "action" : "allow",
+      "remote-domains" : "astockcdn.net"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "substance3d.com"
+    },
+    {
+      "action" : "allow",
       "remote-domains" : "microsoft.com"
     },
     {
@@ -262,7 +270,6 @@
       "action" : "allow",
       "remote-domains" : "typekit"
     },
-
     {
       "action" : "allow",
       "remote-domains" : "todesktop.com"
