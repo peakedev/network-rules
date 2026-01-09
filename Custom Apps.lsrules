@@ -679,13 +679,7 @@
     },
     {
       "action" : "allow",
-      "process" : "identifier.SHA256/37322d2a1dcec9f0108c823b960d89173f48ba820ca2d231a52f0d8d58a778c9",
-      "remote-domains" : "trivy.dev"
-    },
-    {
-      "action" : "allow",
       "remote-domains" : "trivy.dev",
-      "via" : "path.opt/homebrew/Cellar/trivy/*/bin/trivy"
     },
     {
       "action" : "allow",
