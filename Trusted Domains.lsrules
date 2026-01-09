@@ -260,6 +260,11 @@
     },
     {
       "action" : "allow",
+      "remote-domains" : "typekit"
+    },
+
+    {
+      "action" : "allow",
       "remote-domains" : "todesktop.com"
     },
     {
