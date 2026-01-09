@@ -12,7 +12,7 @@
         "docusign.net",
         "docucdn-a.akamaihd.net"
       ]
-    }
+    },
     {
       "action" : "allow",
       "remote-domains" : "outlook.com"
