@@ -784,7 +784,7 @@
     },
     {
       "action": "deny", 
-      "process": "Z6D26JE4Y4/com.sublimetext.4",
+      "process": "identifier.Z6D26JE4Y4\/com.sublimetext.4",
       "remote-domains": "sublimetext.com"
     }
   ]
