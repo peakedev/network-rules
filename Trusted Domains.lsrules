@@ -7,12 +7,23 @@
       "remote-domains" : "adobe.com"
     },
     {
+      "action": "allow",
+      "remote-domains": [
+        "docusign.net",
+        "docucdn-a.akamaihd.net"
+      ]
+    }
+    {
       "action" : "allow",
       "remote-domains" : "outlook.com"
     },
     {
       "action" : "allow",
-      "remote-domains" : "google.com"
+      "remote-domains" : ["googleusercontent.com","google.com"]
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : ["notion.so","notionusercontent.com","notion-static.com"]
     },
     {
       "action" : "allow",
