@@ -492,11 +492,21 @@
         },
         {
             "action": "allow",
-            "notes": "Notion",
+            "notes": "Notion Allow",
             "process": "identifier.LBQJ96FQ8D/notion.id",
             "remote-domains": [
                 "splunkcloud.com",
                 "us-west-2.amazonaws.com"
+            ]
+        },
+        {
+            "action": "deny",
+            "notes": "Notion Deny",
+            "process": "identifier.LBQJ96FQ8D/notion.id",
+            "remote-domains": [
+                "gist.build", 
+                "sentry.io",
+                "customer.io"
             ]
         },
         {
@@ -541,7 +551,8 @@
                 "slack-edge.com",
                 "slack-imgs.com",
                 "slack.com",
-                "slackb.com"
+                "slackb.com",
+                "s3-us-west-2.amazonaws.com"
             ]
         },
         {
