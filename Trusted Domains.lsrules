@@ -1,5 +1,5 @@
 {
-  "description" : "Trusted domains for all apps\/processes",
+  "description" : "Trusted domains for all apps/processes",
   "name" : "Trusted Domains",
   "rules" : [
     {
@@ -72,11 +72,19 @@
     },
     {
       "action" : "allow",
+      "remote-domains" : "brew.sh"
+    },
+    {
+      "action" : "allow",
       "remote-domains" : "cloud.microsoft"
     },
     {
       "action" : "allow",
       "remote-domains" : "digicert.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "dns.google"
     },
     {
       "action" : "allow",
@@ -88,11 +96,27 @@
     },
     {
       "action" : "allow",
+      "remote-domains" : "gcr.io"
+    },
+    {
+      "action" : "allow",
       "remote-domains" : "github.com"
     },
     {
       "action" : "allow",
+      "remote-domains" : "githubusercontent.com"
+    },
+    {
+      "action" : "allow",
       "remote-domains" : "gmail.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "googleapis.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "gvt1.com"
     },
     {
       "action" : "allow",
@@ -120,6 +144,10 @@
     },
     {
       "action" : "allow",
+      "remote-domains" : "nr-data.net"
+    },
+    {
+      "action" : "allow",
       "remote-domains" : "obdev.at"
     },
     {
@@ -140,7 +168,23 @@
     },
     {
       "action" : "allow",
+      "remote-domains" : "openvpn.net"
+    },
+    {
+      "action" : "allow",
       "remote-domains" : "peake.be"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "pypi.org"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : [
+        "scdn.co",
+        "spotify.com",
+        "spotifycdn.com"
+      ]
     },
     {
       "action" : "allow",
@@ -152,11 +196,27 @@
     },
     {
       "action" : "allow",
+      "remote-domains" : "sharepointonline.com"
+    },
+    {
+      "action" : "allow",
       "remote-domains" : "skype.com"
     },
     {
       "action" : "allow",
+      "remote-domains" : [
+        "sndcdn.com",
+        "soundcloud.cloud",
+        "soundcloud.com"
+      ]
+    },
+    {
+      "action" : "allow",
       "remote-domains" : "static.microsoft"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "todesktop.com"
     },
     {
       "action" : "allow",
@@ -169,6 +229,20 @@
     {
       "action" : "allow",
       "remote-domains" : "windows.net"
+    },
+    {
+      "action" : "allow",
+      "notes" : "Proximus DNS\n",
+      "remote-addresses" : "2a02:a018:106:9300::1"
+    },
+    {
+      "action" : "allow",
+      "notes" : "Legitimate microsoft services IP Range\n",
+      "remote-addresses" : "2603:1063::-2603:1063:1ff:ffff:ffff:ffff:ffff:ffff"
+    },
+    {
+      "action" : "deny",
+      "remote-domains" : "sentry.io"
     }
   ]
 }

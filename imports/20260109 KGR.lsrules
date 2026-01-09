@@ -1,0 +1,173 @@
+{
+  "description" : "",
+  "name" : "new rules",
+  "rules" : [
+    {
+      "action" : "allow",
+      "process" : "identifier.SHA256\/37322d2a1dcec9f0108c823b960d89173f48ba820ca2d231a52f0d8d58a778c9",
+      "remote-domains" : "trivy.dev"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "gcr.io"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "githubusercontent.com",
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "openvpn.net",
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "pypi.org"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "brew.sh"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "trivy.dev",
+      "via" : "path.opt\/homebrew\/Cellar\/trivy\/*\/bin\/trivy"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "dns.google"
+    },
+    {
+      "action" : "allow",
+      "notes" : "Proximus DNS\n",
+      "remote-addresses" : "2a02:a018:106:9300::1"
+    },
+    {
+      "action" : "allow",
+      "notes" : "Legitimate microsoft services IP Range\n",
+      "remote-addresses" : "2603:1063::-2603:1063:1ff:ffff:ffff:ffff:ffff:ffff"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "gvt1.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "googleapis.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "todesktop.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "sharepointonline.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "nr-data.net"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.2DC432GLL2\/com.openai.chat",
+      "remote-addresses" : "20.162.96.163"
+    },
+    {
+      "action" : "allow",
+      "disabled" : true,
+      "process" : "identifier.2DC432GLL2\/ChatGPTHelper",
+      "remote-hosts" : "ios.chat.openai.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.2DC432GLL2\/com.openai.chat",
+      "remote-addresses" : "52.143.181.161"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.2DC432GLL2\/com.openai.chat",
+      "remote-addresses" : "135.220.40.201"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.APPLE\/com.apple.Terminal",
+      "remote-domains" : "influxdata.com",
+      "via" : "identifier.APPLE\/com.apple.curl"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "influxdata.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "pythonhosted.org"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "github.com",
+      "via" : "path.opt\/homebrew\/Cellar\/python@3.14\/*\/Frameworks\/Python.framework\/Versions\/3.14\/Resources\/Python.app\/Contents\/MacOS\/Python"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "s3.amazonaws.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.T8RA8NE3B7\/com.figma.Desktop",
+      "remote-domains" : "browser-intake-datadoghq.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "shields.io"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "apphb.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "azure.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "cursor-cdn.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "githubusercontent.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.7VZ2S3V9RV\/com.linear",
+      "remote-domains" : "linear.app"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : [
+        "sndcdn.com",
+        "soundcloud.cloud",
+        "soundcloud.com"
+      ]
+    },
+    {
+      "action" : "deny",
+      "remote-domains" : "sentry.io"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : [
+        "scdn.co",
+        "spotify.com",
+        "spotifycdn.com"
+      ]
+    }
+  ]
+}
