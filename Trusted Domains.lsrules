@@ -28,6 +28,10 @@
     },
     {
       "action" : "allow",
+      "remote-domains" : "trivy.dev",
+    },
+    {
+      "action" : "allow",
       "remote-domains" : "adobecc.com"
     },
     {
