@@ -781,6 +781,11 @@
       "action" : "allow",
       "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
       "remote-domains" : "cursorapi.com"
+    },
+    {
+      "action": "deny", 
+      "process": "Z6D26JE4Y4/com.sublimetext.4",
+      "remote-domains": "sublimetext.com"
     }
   ]
 }
