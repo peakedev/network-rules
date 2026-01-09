@@ -231,6 +231,10 @@
       "remote-domains" : "dell.com"
     },
     {
+      "action" : "deny",
+      "process" : "identifier.76K5J93FY6/Qisda.DDPM",
+    },
+    {
       "action" : "allow",
       "process" : "identifier.QMQYCKL255/io.robbie.HomeAssistant",
       "remote-domains" : "cartocdn.com"
