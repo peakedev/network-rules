@@ -17,8 +17,8 @@
     {
       "action" : "allow",
       "remote-domains" : [
-        "msfauth.net",
-        "msfauthimages.net",
+        "msftauth.net",
+        "msftauthimages.net",
         "acompli.net"
       ]
     },
