@@ -8,7 +8,27 @@
     },
     {
       "action" : "allow",
+      "remote-domains" : "google.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "gstatic.com"
+    },
+    {
+      "action" : "allow",
       "remote-domains" : "microsoft.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "responsively.app"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "simplesvg.com"
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : "supabase.co"
     },
     {
       "action" : "allow",
@@ -188,6 +208,14 @@
         "scdn.co",
         "spotify.com",
         "spotifycdn.com"
+      ]
+    },
+    {
+      "action" : "allow",
+      "remote-domains" : [
+        "hfyen.nl",
+        "hyfen.eu",
+        "hyfen.cloud"
       ]
     },
     {
