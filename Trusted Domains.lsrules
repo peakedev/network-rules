@@ -44,6 +44,13 @@
         },
         {
             "action": "allow",
+            "notes": "OVH Services",
+            "remote-domains": [
+                "ovh.net"
+            ]
+        },
+        {
+            "action": "allow",
             "notes": "Adobe Creative Cloud & Services",
             "remote-domains": [
                 "acrobat.com",
@@ -123,6 +130,14 @@
         },
         {
             "action": "allow",
+            "notes": "Trustup domains",
+            "remote-domains": [
+                "trustup.group",
+                "trustup.be"
+            ]
+        },
+        {
+            "action": "allow",
             "notes": "Development tools",
             "remote-domains": [
                 "brew.sh",
@@ -131,7 +146,8 @@
                 "simplesvg.com",
                 "supabase.co",
                 "todesktop.com",
-                "trivy.dev"
+                "trivy.dev",
+                "linear.app"
             ]
         },
         {
