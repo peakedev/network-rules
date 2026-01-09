@@ -603,6 +603,12 @@
     },
     {
       "action" : "allow",
+      "ports" : "5222",
+      "process" : "identifier.57T9237FN3/net.whatsapp.WhatsApp",
+      "remote-addresses" : "*.*.*.*"
+    },
+    {
+      "action" : "allow",
       "process" : "identifier.57T9237FN3/net.whatsapp.WhatsApp",
       "remote-addresses" : "2a03:2880:*:*:*:*:*:*"
     },
