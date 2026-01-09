@@ -8,6 +8,110 @@
       "remote-addresses" : "168.63.129.16"
     },
     {
+      "action" : "allow",
+      "process" : "identifier.9BNSXJN65R\/com.docker.docker",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "ports" : "443",
+      "process" : "identifier.T8RA8NE3B7\/com.figma.agent",
+      "protocol" : "tcp",
+      "remote-domains" : "figma.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.QMQYCKL255\/io.robbie.HomeAssistant",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.Y93TK974AT\/com.bjango.istatmenus",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "process" : "identifier.UBF8T346G9\/com.microsoft.Outlook",
+      "remote-hosts" : "click.email.openvpn.net"
+    },
+    {
+      "action" : "deny",
+      "process" : "identifier.UBF8T346G9\/com.microsoft.Outlook",
+      "remote-hosts" : "usw2-track.atlassian.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.UBF8T346G9\/com.microsoft.Outlook",
+      "remote-hosts" : "nam.safelink.emails.azure.net"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.UBF8T346G9\/com.microsoft.Powerpoint",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "direction" : "incoming",
+      "process" : "identifier.UBF8T346G9\/com.microsoft.teams2",
+      "remote-addresses" : "2a02:a020:5c8:9834:1033:bfe5:4fcc:95c7"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.4XWMY46275\/com.mongodb.compass",
+      "remote-hosts" : "api.segment.io"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.4XWMY46275\/com.mongodb.compass",
+      "remote-domains" : "azure.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.LBQJ96FQ8D\/notion.id",
+      "remote-domains" : "us-west-2.amazonaws.com"
+    },
+ 
+    {
+      "action" : "allow",
+      "process" : "identifier.LBQJ96FQ8D\/notion.id",
+      "remote-domains" : "splunkcloud.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.ACV7L3WCD8\/org.openvpn.client.app",
+      "remote" : "any"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.ACV7L3WCD8\/org.openvpn.client.app.helper",
+      "remote" : "any"
+    },
+    {
+      "action" : "deny",
+      "process" : "identifier.M4H33HFC4K\/app.responsively",
+      "remote-addresses" : "168.63.129.16"
+    },
+    {
+      "action" : "deny",
+      "process" : "identifier.M4H33HFC4K\/app.responsively",
+      "remote-domains" : "xupea.com"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.M4H33HFC4K\/app.responsively",
+      "remote-domains" : "iconify.design"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.M4H33HFC4K\/app.responsively",
+      "remote-domains" : "unisvg.com"
+    },
+    {
+      "action" : "deny",
+      "process" : "identifier.Z6D26JE4Y4\/com.sublimetext.4",
+      "remote-domains" : "sublimetext.com"
+    },
+    {
       "action" : "deny",
       "process" : "identifier.JQ525L2MZD/com.adobe.Acrobat.Pro",
       "remote-domains" : "d1swly8pgrbhu5.cloudfront.net"
