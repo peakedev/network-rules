@@ -19,11 +19,18 @@
     },
     {
       "action" : "allow",
-      "remote-domains" : ["googleusercontent.com","google.com"]
+      "remote-domains" : [
+        "googleusercontent.com",
+        "google.com"
+      ]
     },
     {
       "action" : "allow",
-      "remote-domains" : ["notion.so","notionusercontent.com","notion-static.com"]
+      "remote-domains" : [
+        "notion.so",
+        "notionusercontent.com",
+        "notion-static.com"
+      ]
     },
     {
       "action" : "allow",
