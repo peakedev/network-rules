@@ -16,6 +16,14 @@
     },
     {
       "action" : "allow",
+      "remote-domains" : [
+        "msfauth.net",
+        "msfauthimages.net",
+        "acompli.net"
+      ]
+    },
+    {
+      "action" : "allow",
       "remote-domains" : "gstatic.com"
     },
     {
