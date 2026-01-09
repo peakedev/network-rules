@@ -710,6 +710,77 @@
       "action" : "allow",
       "process" : "identifier.7VZ2S9RV/com.linear",
       "remote-domains" : "linear.app"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "ovh.co.uk",
+      "via" : "path.opt\/homebrew\/Cellar\/python@3.14\/*\/Frameworks\/Python.framework\/Versions\/3.14\/Resources\/Python.app\/Contents\/MacOS\/Python"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "azure.com",
+      "via" : "path.opt\/homebrew\/Cellar\/python@3.14\/*\/Frameworks\/Python.framework\/Versions\/3.14\/Resources\/Python.app\/Contents\/MacOS\/Python"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "github.com",
+      "via" : "path.opt\/homebrew\/Cellar\/python@3.14\/*\/Frameworks\/Python.framework\/Versions\/3.14\/Resources\/Python.app\/Contents\/MacOS\/Python"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "github.io",
+      "via" : "\/Users\/hyfen\/Library\/Python\/3.9\/lib\/python\/site-packages\/selenium\/webdriver\/common\/macos\/selenium-manager"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "googleapis.com",
+      "via" : "\/Users\/hyfen\/Library\/Python\/3.9\/lib\/python\/site-packages\/selenium\/webdriver\/common\/macos\/selenium-manager"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "ovh.net",
+      "via" : "path.opt\/homebrew\/Cellar\/python@3.14\/*\/Frameworks\/Python.framework\/Versions\/3.14\/Resources\/Python.app\/Contents\/MacOS\/Python"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "ovhcloud.com",
+      "via" : "path.opt\/homebrew\/Cellar\/python@3.14\/*\/Frameworks\/Python.framework\/Versions\/3.14\/Resources\/Python.app\/Contents\/MacOS\/Python"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "plausible.io",
+      "via" : "\/Users\/hyfen\/Library\/Python\/3.9\/lib\/python\/site-packages\/selenium\/webdriver\/common\/macos\/selenium-manager"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "pypi.org",
+      "via" : "path.opt\/homebrew\/Cellar\/python@3.14\/*\/Frameworks\/Python.framework\/Versions\/3.14\/Resources\/Python.app\/Contents\/MacOS\/Python"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "pythonhosted.org",
+      "via" : "path.opt\/homebrew\/Cellar\/python@3.14\/*\/Frameworks\/Python.framework\/Versions\/3.14\/Resources\/Python.app\/Contents\/MacOS\/Python"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "rust-lang.org",
+      "via" : "path.opt\/homebrew\/Cellar\/python@3.14\/*\/Frameworks\/Python.framework\/Versions\/3.14\/Resources\/Python.app\/Contents\/MacOS\/Python"
+    },
+    {
+      "action" : "allow",
+      "process" : "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
+      "remote-domains" : "cursorapi.com"
     }
   ]
 }
