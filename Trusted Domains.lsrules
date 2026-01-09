@@ -1,322 +1,195 @@
 {
-  "description" : "Trusted domains for all apps/processes",
-  "name" : "Trusted Domains",
-  "rules" : [
-    {
-      "action" : "allow",
-      "remote-domains" : "adobe.com"
-    },
-    {
-      "action": "allow",
-      "remote-domains": [
-        "docusign.net",
-        "docucdn-a.akamaihd.net"
-      ]
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "outlook.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : [
-        "googleusercontent.com",
-        "google.com"
-      ]
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : [
-        "notion.so",
-        "notionusercontent.com",
-        "notion-static.com"
-      ]
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : [
-        "msftauth.net",
-        "msftauthimages.net",
-        "acompli.net"
-      ]
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "gstatic.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "astockcdn.net"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "substance3d.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "microsoft.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "responsively.app"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "simplesvg.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "supabase.co"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "skype.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "acrobat.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "adobe.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "adobe.io"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "trivy.dev",
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "adobecc.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "adobecces.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "adobeccstatic.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "adobedc.net"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "adobedtm.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "adobelogin.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "adobeoobe.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "adobesc.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "adobess.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "appcenter.ms"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "azurefd.net"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "brew.sh"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "cloud.microsoft"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "digicert.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "dns.google"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "eboxenterprise.be"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "eurocert.pl"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "gcr.io"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "github.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "githubusercontent.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "gmail.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "googleapis.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "gvt1.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "istatmenus.app"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "live.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "me.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "microsoft.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "microsoftonline.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "msauth.net"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "nr-data.net"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "obdev.at"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "office.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "office.net"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "office365.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "omtrdc.net"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "openvpn.net"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "peake.be"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "pypi.org"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : [
-        "scdn.co",
-        "spotify.com",
-        "spotifycdn.com"
-      ]
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : [
-        "hfyen.nl",
-        "hyfen.eu",
-        "hyfen.cloud"
-      ]
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "sfx.ms"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "sharepoint.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "sharepointonline.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "skype.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : [
-        "sndcdn.com",
-        "soundcloud.cloud",
-        "soundcloud.com"
-      ]
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "static.microsoft"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "typekit"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "todesktop.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "ui.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "windows.com"
-    },
-    {
-      "action" : "allow",
-      "remote-domains" : "windows.net"
-    },
-    {
-      "action" : "allow",
-      "notes" : "Proximus DNS\n",
-      "remote-addresses" : "2a02:a018:106:9300::1"
-    },
-    {
-      "action" : "allow",
-      "notes" : "Legitimate microsoft services IP Range\n",
-      "remote-addresses" : "2603:1063::-2603:1063:1ff:ffff:ffff:ffff:ffff:ffff"
-    },
-    {
-      "action" : "deny",
-      "remote-domains" : "sentry.io"
-    }
-  ]
+    "description": "Trusted domains for all apps/processes",
+    "name": "Trusted Domains",
+    "rules": [
+        {
+            "action": "allow",
+            "notes": "Microsoft / Office 365 / Azure",
+            "remote-domains": [
+                "appcenter.ms",
+                "azurefd.net",
+                "cloud.microsoft",
+                "live.com",
+                "microsoft.com",
+                "microsoftonline.com",
+                "msauth.net",
+                "msftauth.net",
+                "msftauthimages.net",
+                "office.com",
+                "office.net",
+                "office365.com",
+                "outlook.com",
+                "sfx.ms",
+                "sharepoint.com",
+                "sharepointonline.com",
+                "skype.com",
+                "static.microsoft",
+                "windows.com",
+                "windows.net"
+            ]
+        },
+        {
+            "action": "allow",
+            "notes": "Google Services",
+            "remote-domains": [
+                "dns.google",
+                "gcr.io",
+                "gmail.com",
+                "google.com",
+                "googleapis.com",
+                "googleusercontent.com",
+                "gstatic.com",
+                "gvt1.com"
+            ]
+        },
+        {
+            "action": "allow",
+            "notes": "Adobe Creative Cloud & Services",
+            "remote-domains": [
+                "acrobat.com",
+                "adobe.com",
+                "adobe.io",
+                "adobecc.com",
+                "adobecces.com",
+                "adobeccstatic.com",
+                "adobedc.net",
+                "adobedtm.com",
+                "adobelogin.com",
+                "adobeoobe.com",
+                "adobesc.com",
+                "adobess.com",
+                "astockcdn.net",
+                "omtrdc.net",
+                "substance3d.com",
+                "typekit"
+            ]
+        },
+        {
+            "action": "allow",
+            "notes": "GitHub",
+            "remote-domains": [
+                "github.com",
+                "githubusercontent.com"
+            ]
+        },
+        {
+            "action": "allow",
+            "notes": "Apple",
+            "remote-domains": "me.com"
+        },
+        {
+            "action": "allow",
+            "notes": "DocuSign",
+            "remote-domains": [
+                "docucdn-a.akamaihd.net",
+                "docusign.net"
+            ]
+        },
+        {
+            "action": "allow",
+            "notes": "Notion",
+            "remote-domains": [
+                "notion-static.com",
+                "notion.so",
+                "notionusercontent.com"
+            ]
+        },
+        {
+            "action": "allow",
+            "notes": "Spotify",
+            "remote-domains": [
+                "scdn.co",
+                "spotify.com",
+                "spotifycdn.com"
+            ]
+        },
+        {
+            "action": "allow",
+            "notes": "SoundCloud",
+            "remote-domains": [
+                "sndcdn.com",
+                "soundcloud.cloud",
+                "soundcloud.com"
+            ]
+        },
+        {
+            "action": "allow",
+            "notes": "Hyfen domains",
+            "remote-domains": [
+                "hfyen.nl",
+                "hyfen.cloud",
+                "hyfen.eu"
+            ]
+        },
+        {
+            "action": "allow",
+            "notes": "Development tools",
+            "remote-domains": [
+                "brew.sh",
+                "pypi.org",
+                "responsively.app",
+                "simplesvg.com",
+                "supabase.co",
+                "todesktop.com",
+                "trivy.dev"
+            ]
+        },
+        {
+            "action": "allow",
+            "notes": "Certificate authorities",
+            "remote-domains": [
+                "digicert.com",
+                "eurocert.pl"
+            ]
+        },
+        {
+            "action": "allow",
+            "notes": "Monitoring & Analytics",
+            "remote-domains": [
+                "acompli.net",
+                "nr-data.net"
+            ]
+        },
+        {
+            "action": "allow",
+            "notes": "Networking & VPN",
+            "remote-domains": [
+                "openvpn.net",
+                "ui.com"
+            ]
+        },
+        {
+            "action": "allow",
+            "notes": "Little Snitch (obdev)",
+            "remote-domains": "obdev.at"
+        },
+        {
+            "action": "allow",
+            "notes": "iStat Menus",
+            "remote-domains": "istatmenus.app"
+        },
+        {
+            "action": "allow",
+            "notes": "Belgian services",
+            "remote-domains": [
+                "eboxenterprise.be",
+                "peake.be"
+            ]
+        },
+        {
+            "action": "allow",
+            "notes": "Proximus DNS",
+            "remote-addresses": "2a02:a018:106:9300::1"
+        },
+        {
+            "action": "allow",
+            "notes": "Legitimate Microsoft services IP Range",
+            "remote-addresses": "2603:1063::-2603:1063:1ff:ffff:ffff:ffff:ffff:ffff"
+        },
+        {
+            "action": "deny",
+            "notes": "Blocked telemetry",
+            "remote-domains": "sentry.io"
+        }
+    ]
 }
