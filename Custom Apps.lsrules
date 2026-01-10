@@ -463,7 +463,10 @@
             "action": "allow",
             "notes": "MongoDB Compass",
             "process": "identifier.4XWMY46275/com.mongodb.compass",
-            "remote-domains": "azure.com",
+            "remote-domains": [
+                "azure.com",
+                "mongodb.com"
+            ],
             "remote-hosts": "api.segment.io"
         },
         {
