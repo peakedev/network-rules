@@ -470,6 +470,14 @@
             "remote-hosts": "api.segment.io"
         },
         {
+            "action": "deny",
+            "notes": "MongoDB Compass",
+            "process": "identifier.4XWMY46275/com.mongodb.compass",
+            "remote-domains": [
+                "intercom.io"
+            ]
+        },
+        {
             "action": "allow",
             "notes": "Ninox",
             "process": "identifier.BJE6SD455T/de.ninoxdb.ninox-mac.Ninox",
