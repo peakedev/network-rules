@@ -12,7 +12,6 @@
             "notes": "Adobe Acrobat Pro - blocked domains",
             "process": "identifier.JQ525L2MZD/com.adobe.Acrobat.Pro",
             "remote-domains": [
-                "d1swly8pgrbhu5.cloudfront.net",
                 "demdex.net",
                 "typekit.net"
             ]
@@ -22,8 +21,8 @@
             "notes": "Adobe Acrobat Pro - allowed",
             "process": "identifier.JQ525L2MZD/com.adobe.Acrobat.Pro",
             "remote-domains": [
+                "cloudfront.net",
                 "cookielaw.org",
-                "d1hmet3ucsy3j0.cloudfront.net",
                 "echosign.com",
                 "newrelic.com",
                 "onetrust.com"
@@ -201,12 +200,15 @@
                 "apphb.com",
                 "azure.com",
                 "claude.ai",
+                "claude.com",
                 "cursor-cdn.com",
                 "cursor.com",
                 "cursor.sh",
                 "cursorapi.com",
+                "datadoghq.com",
                 "docker.io",
                 "exp-tas.com",
+                "ghcr.io",
                 "github.com",
                 "githubusercontent.com",
                 "influxdata.com",
@@ -217,7 +219,8 @@
                 "pythonhosted.org",
                 "railway.app",
                 "s3.amazonaws.com",
-                "shields.io"
+                "shields.io",
+                "visualstudio.com"
             ]
         },
         {
@@ -280,6 +283,12 @@
                 "gravatar.com",
                 "wp.com"
             ]
+        },
+        {
+            "action": "allow",
+            "notes": "Figma Desktop DUA",
+            "process": "identifier.T8RA8NE3B7/com.figma.Desktop.dua",
+            "remote-domains": "figma.com"
         },
         {
             "action": "allow",
@@ -596,6 +605,7 @@
                 "141.101.90.1",
                 "162.159.207.0",
                 "213.213.212.102",
+                "233.89.188.1",
                 "255.255.255.255",
                 "2606:4700:49::",
                 "2a06:98c1:3200::1"
@@ -741,9 +751,13 @@
             "notes": "Conductor",
             "process": "identifier.27XN666UJ7/com.conductor.app",
             "remote-domains": [
+                "anthropic.com",
+                "chorus.sh",
                 "conductor.build",
                 "crabnebula.app",
+                "datadoghq.com",
                 "fly.dev",
+                "incident.io",
                 "posthog.com"
             ]
         },
@@ -761,7 +775,14 @@
             "action": "allow",
             "notes": "Gather",
             "process": "identifier.W28UKP642P/com.gather.GatherV2",
-            "remote-domains": "cloudflare.com"
+            "remote-domains": [
+                "cloudflare.com",
+                "featureassets.org",
+                "gather.town",
+                "googletagmanager.com",
+                "newrelic.com",
+                "us-east-2.amazonaws.com"
+            ]
         },
         {
             "action": "allow",
