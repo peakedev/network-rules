@@ -9,12 +9,6 @@
         },
         {
             "action": "deny",
-            "notes": "Adobe Acrobat Pro - blocked",
-            "process": "identifier.JQ525L2MZD/com.adobe.Acrobat.Pro",
-            "remote-addresses": "168.63.129.16"
-        },
-        {
-            "action": "deny",
             "notes": "Adobe Acrobat Pro - blocked domains",
             "process": "identifier.JQ525L2MZD/com.adobe.Acrobat.Pro",
             "remote-domains": [
@@ -34,15 +28,6 @@
             "notes": "Adobe CRDaemon - block all",
             "process": "identifier.JQ525L2MZD/com.adobe.AdobeCRDaemon",
             "remote": "any"
-        },
-        {
-            "action": "deny",
-            "notes": "Adobe Creative Cloud - blocked IPs",
-            "process": "identifier.JQ525L2MZD/com.adobe.acc.AdobeCreativeCloud",
-            "remote-addresses": [
-                "168.63.129.16",
-                "2a01:cb1c:82b0:d100:5efa:25ff:fe6d:5f10"
-            ]
         },
         {
             "action": "deny",
@@ -162,7 +147,6 @@
             "notes": "Bruno - blocked telemetry",
             "process": "identifier.W7LPPWA48L/com.usebruno.app",
             "remote-domains": [
-                "168.63.129.16",
                 "posthog.com",
                 "usebruno.com"
             ]
