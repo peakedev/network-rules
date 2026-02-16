@@ -21,7 +21,13 @@
             "action": "allow",
             "notes": "Adobe Acrobat Pro - allowed",
             "process": "identifier.JQ525L2MZD/com.adobe.Acrobat.Pro",
-            "remote-domains": "newrelic.com"
+            "remote-domains": [
+                "cookielaw.org",
+                "d1hmet3ucsy3j0.cloudfront.net",
+                "echosign.com",
+                "newrelic.com",
+                "onetrust.com"
+            ]
         },
         {
             "action": "deny",
@@ -40,18 +46,9 @@
         },
         {
             "action": "allow",
-            "notes": "Adobe Creative Cloud - allowed",
+            "notes": "Adobe Creative Cloud",
             "process": "identifier.JQ525L2MZD/com.adobe.acc.AdobeCreativeCloud",
-            "remote-domains": [
-                "astockcdn.net",
-                "google.com",
-                "googleapis.com",
-                "macromedia.com",
-                "s3-eu-west-1.amazonaws.com",
-                "sentry.io",
-                "substance3d.com",
-                "typekit.com"
-            ]
+            "remote": "any"
         },
         {
             "action": "allow",
@@ -140,7 +137,10 @@
             "action": "allow",
             "notes": "Bruno - allowed",
             "process": "identifier.W7LPPWA48L/com.usebruno.app",
-            "remote-domains": "textbuddy.nl"
+            "remote-domains": [
+                "railway.app",
+                "textbuddy.nl"
+            ]
         },
         {
             "action": "deny",
@@ -197,17 +197,25 @@
             "notes": "Cursor",
             "process": "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
             "remote-domains": [
+                "anthropic.com",
                 "apphb.com",
                 "azure.com",
+                "claude.ai",
                 "cursor-cdn.com",
                 "cursor.com",
                 "cursor.sh",
                 "cursorapi.com",
+                "docker.io",
                 "exp-tas.com",
                 "github.com",
                 "githubusercontent.com",
                 "influxdata.com",
+                "mongodb.net",
+                "nodejs.org",
+                "npmjs.org",
+                "ondigitalocean.com",
                 "pythonhosted.org",
+                "railway.app",
                 "s3.amazonaws.com",
                 "shields.io"
             ]
@@ -216,16 +224,7 @@
             "action": "allow",
             "notes": "Cursor via Python 3.14",
             "process": "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
-            "remote-domains": [
-                "azure.com",
-                "github.com",
-                "ovh.co.uk",
-                "ovh.net",
-                "ovhcloud.com",
-                "pypi.org",
-                "pythonhosted.org",
-                "rust-lang.org"
-            ],
+            "remote": "any",
             "via": "path.opt\/homebrew\/Cellar\/python@3.14\/*\/Frameworks\/Python.framework\/Versions\/3.14\/Resources\/Python.app\/Contents\/MacOS\/Python"
         },
         {
@@ -265,10 +264,22 @@
             "remote-domains": "figma.com"
         },
         {
+            "action": "deny",
+            "notes": "Figma Desktop - blocked",
+            "process": "identifier.T8RA8NE3B7/com.figma.Desktop",
+            "remote-domains": "statsigapi.net"
+        },
+        {
             "action": "allow",
             "notes": "Figma Desktop",
             "process": "identifier.T8RA8NE3B7/com.figma.Desktop",
-            "remote-domains": "browser-intake-datadoghq.com"
+            "remote-domains": [
+                "awswaf.com",
+                "browser-intake-datadoghq.com",
+                "figma.com",
+                "gravatar.com",
+                "wp.com"
+            ]
         },
         {
             "action": "allow",
@@ -303,8 +314,15 @@
         {
             "action": "allow",
             "notes": "Linear",
-            "process": "identifier.7VZ2S9RV/com.linear",
-            "remote-domains": "linear.app"
+            "process": "identifier.7VZ2S3V9RV/com.linear",
+            "remote-domains": [
+                "figma.com",
+                "githubassets.com",
+                "gravatar.com",
+                "linear.app",
+                "slack-edge.com",
+                "youtube.com"
+            ]
         },
         {
             "action": "allow",
@@ -333,6 +351,7 @@
             "process": "identifier.UBF8T346G9/com.microsoft.Excel",
             "remote-domains": [
                 "azurewebsites.net",
+                "microsoftusercontent.com",
                 "svc.ms"
             ]
         },
@@ -362,6 +381,8 @@
                 "adnxs.com",
                 "azurefd.net",
                 "hs-service-engage.com",
+                "pipedrive.email",
+                "planhat.com",
                 "sendibt3.com",
                 "ucm.be",
                 "unifiedpost.com"
@@ -379,8 +400,12 @@
             "process": "identifier.UBF8T346G9/com.microsoft.Outlook",
             "remote-domains": [
                 "azurewebsites.net",
+                "c.gle",
+                "chargebee.com",
                 "msn.com",
-                "outlook.com"
+                "outlook.com",
+                "posthog.com",
+                "recruitee.com"
             ]
         },
         {
@@ -410,23 +435,9 @@
         },
         {
             "action": "allow",
-            "notes": "Microsoft Teams - IP addresses",
+            "notes": "Microsoft Teams",
             "process": "identifier.UBF8T346G9/com.microsoft.teams2",
-            "remote-addresses": [
-                "13.107.*.*",
-                "2603:1063:118:1::5cc",
-                "2603:1063:20::1b3",
-                "52.112.0.0-52.123.255.255"
-            ]
-        },
-        {
-            "action": "allow",
-            "notes": "Microsoft Teams - domains",
-            "process": "identifier.UBF8T346G9/com.microsoft.teams2",
-            "remote-domains": [
-                "azureedge.net",
-                "spoprod-a.akamaihd.net"
-            ]
+            "remote": "any"
         },
         {
             "action": "allow",
@@ -449,7 +460,8 @@
             "process": "identifier.4XWMY46275/com.mongodb.compass",
             "remote-domains": [
                 "azure.com",
-                "mongodb.com"
+                "mongodb.com",
+                "mongodb.net"
             ],
             "remote-hosts": "api.segment.io"
         },
@@ -490,8 +502,14 @@
             "notes": "Notion Allow",
             "process": "identifier.LBQJ96FQ8D/notion.id",
             "remote-domains": [
+                "figma.com",
+                "gravatar.com",
+                "notion.com",
+                "s3-us-west-2.amazonaws.com",
                 "splunkcloud.com",
-                "us-west-2.amazonaws.com"
+                "trunkbaseddevelopment.com",
+                "us-west-2.amazonaws.com",
+                "wp.com"
             ]
         },
         {
@@ -538,16 +556,29 @@
             ]
         },
         {
+            "action": "deny",
+            "notes": "Slack - blocked",
+            "process": "identifier.BQR82RBBHL/com.tinyspeck.slackmacgap",
+            "remote-domains": [
+                "ggpht.com",
+                "ytimg.com"
+            ]
+        },
+        {
             "action": "allow",
             "notes": "Slack",
             "process": "identifier.BQR82RBBHL/com.tinyspeck.slackmacgap",
             "remote-domains": [
                 "chime.aws",
+                "doubleclick.net",
+                "googlevideo.com",
+                "s3-us-west-2.amazonaws.com",
                 "slack-edge.com",
                 "slack-imgs.com",
                 "slack.com",
                 "slackb.com",
-                "s3-us-west-2.amazonaws.com"
+                "tenor.com",
+                "youtube.com"
             ]
         },
         {
@@ -679,6 +710,133 @@
             "notes": "WhatsApp ServiceExtension - domain",
             "process": "identifier.57T9237FN3/net.whatsapp.WhatsApp.ServiceExtension",
             "remote-domains": "whatsapp.net"
+        },
+        {
+            "action": "allow",
+            "notes": "Apple trustd",
+            "process": "identifier.APPLE/com.apple.trustd",
+            "remote": "any"
+        },
+        {
+            "action": "allow",
+            "notes": "Terminal via Node",
+            "process": "identifier.APPLE/com.apple.Terminal",
+            "remote-domains": [
+                "anthropic.com",
+                "claude.com",
+                "datadoghq.com",
+                "npmjs.org"
+            ],
+            "via": "identifier.HX7739G8FX/node"
+        },
+        {
+            "action": "allow",
+            "notes": "Terminal via ping",
+            "process": "identifier.APPLE/com.apple.Terminal",
+            "remote": "any",
+            "via": "identifier.APPLE/com.apple.ping"
+        },
+        {
+            "action": "allow",
+            "notes": "Conductor",
+            "process": "identifier.27XN666UJ7/com.conductor.app",
+            "remote-domains": [
+                "conductor.build",
+                "crabnebula.app",
+                "fly.dev",
+                "posthog.com"
+            ]
+        },
+        {
+            "action": "allow",
+            "direction": "incoming",
+            "notes": "Gather - incoming",
+            "process": "identifier.W28UKP642P/com.gather.GatherV2",
+            "remote-addresses": [
+                "2a02:a018:106:9300:1b08:ca43:cdd3:2575",
+                "2a02:a018:106:9300:9be5:26ad:61d6:8ef0"
+            ]
+        },
+        {
+            "action": "allow",
+            "notes": "Gather",
+            "process": "identifier.W28UKP642P/com.gather.GatherV2",
+            "remote-domains": "cloudflare.com"
+        },
+        {
+            "action": "allow",
+            "notes": "Google Chrome",
+            "process": "identifier.EQHXZ8M8AV/com.google.Chrome",
+            "remote": "any"
+        },
+        {
+            "action": "allow",
+            "notes": "Google Drive FS",
+            "process": "identifier.EQHXZ8M8AV/com.google.drivefs",
+            "remote": "any"
+        },
+        {
+            "action": "allow",
+            "notes": "MacWhisper",
+            "process": "identifier.8Q7TMPA46J/com.goodsnooze.MacWhisper",
+            "remote-domains": [
+                "argmaxinc.com",
+                "fly.dev",
+                "github.io",
+                "gumroad.com",
+                "hf.co",
+                "huggingface.co",
+                "macwhisper.com",
+                "stickytimers.app",
+                "telemetrydeck.com",
+                "vercel.app"
+            ]
+        },
+        {
+            "action": "allow",
+            "notes": "MySQL Workbench",
+            "process": "identifier.VB5E2TV963/com.oracle.workbench.MySQLWorkbench",
+            "remote-domains": "ondigitalocean.com"
+        },
+        {
+            "action": "allow",
+            "notes": "Notion Calendar (Cron)",
+            "process": "identifier.LBQJ96FQ8D/com.cron.electron",
+            "remote-domains": [
+                "cloudflare.com",
+                "notion.com",
+                "s3-us-west-2.amazonaws.com",
+                "splunkcloud.com"
+            ]
+        },
+        {
+            "action": "allow",
+            "notes": "Notion Mail",
+            "process": "identifier.LBQJ96FQ8D/notion.mail.id",
+            "remote-domains": [
+                "decagon.ai",
+                "featureassets.org",
+                "prodregistryv2.org",
+                "s3-accelerate.amazonaws.com",
+                "s3-us-west-2.amazonaws.com",
+                "splunkcloud.com"
+            ]
+        },
+        {
+            "action": "allow",
+            "notes": "Rotato",
+            "process": "identifier.UDGLB23X37/com.mortenjust.Rendermock",
+            "remote-domains": [
+                "amplitude.com",
+                "graphassets.com",
+                "mixpanel.com",
+                "otato.app",
+                "paddle.com",
+                "paddleapi.com",
+                "rota.to",
+                "rotato.app",
+                "vimeo.com"
+            ]
         }
     ]
 }

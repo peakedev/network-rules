@@ -82,7 +82,18 @@
         {
             "action": "allow",
             "notes": "Apple",
-            "remote-domains": "me.com"
+            "remote-domains": [
+                "apple",
+                "apple-cloudkit.com",
+                "apple-mapkit.com",
+                "apple.com",
+                "apple.news",
+                "cdn-apple.com",
+                "icloud-content.com",
+                "icloud.com",
+                "me.com",
+                "mzstatic.com"
+            ]
         },
         {
             "action": "allow",
@@ -201,6 +212,24 @@
             "action": "allow",
             "notes": "Legitimate Microsoft services IP Range",
             "remote-addresses": "2603:1063::-2603:1063:1ff:ffff:ffff:ffff:ffff:ffff"
+        },
+        {
+            "action": "allow",
+            "notes": "Azure metadata IP",
+            "remote-addresses": "168.63.129.16"
+        },
+        {
+            "action": "allow",
+            "direction": "both",
+            "notes": "Local network",
+            "remote": "local-net"
+        },
+        {
+            "action": "allow",
+            "direction": "incoming",
+            "notes": "ICMP ping",
+            "protocol": "icmp",
+            "remote": "any"
         },
         {
             "action": "deny",
