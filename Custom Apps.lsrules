@@ -529,21 +529,10 @@
         },
         {
             "action" : "allow",
-            "notes" : "Tor Browser",
+            "direction" : "both",
+            "notes" : "Tor Browser - allow all destinations",
             "process" : "identifier.MADPSAYN6T/org.torproject.torbrowser",
-            "remote-addresses" : [
-                "5.2.72.110",
-                "37.218.245.14",
-                "45.145.95.6",
-                "80.67.167.81",
-                "82.221.131.5",
-                "107.189.8.226",
-                "146.57.248.225",
-                "209.148.46.65",
-                "212.83.43.74",
-                "212.83.43.95"
-            ],
-            "remote-domains" : "vuejs.org"
+            "remote" : "any"
         },
         {
             "action" : "allow",
@@ -846,6 +835,9 @@
             "notes" : "Cursor",
             "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
             "remote-domains" : [
+                "azure.com",
+                "azure.net",
+                "azurecontainerapps.io",
                 "anthropic.com",
                 "apphb.com",
                 "claude.ai",
@@ -858,15 +850,30 @@
                 "docker.com",
                 "docker.io",
                 "exp-tas.com",
+                "github.com",
+                "github.io",
+                "githubusercontent.com",
+                "googleapis.com",
+                "gstatic.com",
                 "ghcr.io",
                 "influxdata.com",
+                "microsoft.com",
+                "microsoftonline.com",
+                "nodejs.org",
+                "npmjs.org",
                 "open-vsx.org",
+                "plausible.io",
+                "prisma.sh",
                 "python-httpx.org",
                 "railway.app",
                 "segment.io",
                 "shields.io",
+                "supabase.co",
+                "supabase.com",
                 "textualize.io",
-                "vercel-storage.com"
+                "vercel-storage.com",
+                "visualstudio.com",
+                "windows.net"
             ]
         },
         {
@@ -875,66 +882,6 @@
             "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
             "remote" : "any",
             "via" : "path.opt/homebrew/Cellar/python@3.14/*/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python"
-        },
-        {
-            "action" : "allow",
-            "notes" : "Cursor via Python 3.13 - Azure & Microsoft",
-            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
-            "remote-domains" : [
-                "microsoft.com",
-                "microsoftonline.com",
-                "visualstudio.com",
-                "windows.net"
-            ],
-            "via" : "path.opt/homebrew/Cellar/python@3.13/*/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python"
-        },
-        {
-            "action" : "allow",
-            "notes" : "Cursor via Node - development tools",
-            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
-            "remote-domains" : [
-                "googleapis.com",
-                "gstatic.com",
-                "nodejs.org",
-                "npmjs.org",
-                "prisma.sh"
-            ],
-            "via" : "path.opt/homebrew/Cellar/node/*/bin/node"
-        },
-        {
-            "action" : "allow",
-            "notes" : "Cursor via gh - GitHub CLI",
-            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
-            "remote-domains" : [
-                "github.com",
-                "githubusercontent.com"
-            ],
-            "via" : "path.opt/homebrew/Cellar/gh/*/bin/gh"
-        },
-        {
-            "action" : "allow",
-            "notes" : "Cursor via Supabase CLI",
-            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
-            "remote-domains" : "supabase.co",
-            "via" : "path.opt/homebrew/Cellar/supabase/*/bin/supabase"
-        },
-        {
-            "action" : "allow",
-            "notes" : "Cursor via PostgreSQL",
-            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
-            "remote-domains" : "supabase.com",
-            "via" : "path.opt/homebrew/Cellar/postgresql@14/*/bin/psql"
-        },
-        {
-            "action" : "allow",
-            "notes" : "Cursor via Selenium",
-            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
-            "remote-domains" : [
-                "github.io",
-                "googleapis.com",
-                "plausible.io"
-            ],
-            "via" : "path.*/Library/Python/*/lib/python/site-packages/selenium/webdriver/common/macos/selenium-manager"
         },
         {
             "action" : "allow",
