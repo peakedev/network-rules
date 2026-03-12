@@ -205,11 +205,6 @@
         },
         {
             "action": "allow",
-            "notes": "Proximus DNS",
-            "remote-addresses": "2a02:a018:106:9300::1"
-        },
-        {
-            "action": "allow",
             "notes": "Legitimate Microsoft services IP Range",
             "remote-addresses": "2603:1063::-2603:1063:1ff:ffff:ffff:ffff:ffff:ffff"
         },

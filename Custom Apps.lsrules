@@ -239,7 +239,7 @@
                 "googleapis.com",
                 "plausible.io"
             ],
-            "via": "\/Users\/hyfen\/Library\/Python\/3.9\/lib\/python\/site-packages\/selenium\/webdriver\/common\/macos\/selenium-manager"
+            "via": "path.*/Library/Python/*/lib/python/site-packages/selenium/webdriver/common/macos/selenium-manager"
         },
         {
             "action": "allow",
@@ -437,13 +437,7 @@
         },
         {
             "action": "allow",
-            "direction": "incoming",
-            "notes": "Microsoft Teams - incoming",
-            "process": "identifier.UBF8T346G9/com.microsoft.teams2",
-            "remote-addresses": "2a02:a020:5c8:9834:1033:bfe5:4fcc:95c7"
-        },
-        {
-            "action": "allow",
+            "direction": "both",
             "notes": "Microsoft Teams",
             "process": "identifier.UBF8T346G9/com.microsoft.teams2",
             "remote": "any"
@@ -652,30 +646,9 @@
         },
         {
             "action": "allow",
-            "notes": "WhatsApp - IPv4 ports",
-            "ports": "443",
+            "notes": "WhatsApp",
             "process": "identifier.57T9237FN3/net.whatsapp.WhatsApp",
-            "remote-addresses": "*.*.*.*"
-        },
-        {
-            "action": "allow",
-            "notes": "WhatsApp - port 3478",
-            "ports": "3478",
-            "process": "identifier.57T9237FN3/net.whatsapp.WhatsApp",
-            "remote-addresses": "*.*.*.*"
-        },
-        {
-            "action": "allow",
-            "notes": "WhatsApp - port 5222",
-            "ports": "5222",
-            "process": "identifier.57T9237FN3/net.whatsapp.WhatsApp",
-            "remote-addresses": "*.*.*.*"
-        },
-        {
-            "action": "allow",
-            "notes": "WhatsApp - IPv6 Facebook range",
-            "process": "identifier.57T9237FN3/net.whatsapp.WhatsApp",
-            "remote-addresses": "2a03:2880:*:*:*:*:*:*"
+            "remote": "any"
         },
         {
             "action": "deny",
@@ -697,29 +670,9 @@
         },
         {
             "action": "allow",
-            "notes": "WhatsApp ServiceExtension - port 3478",
-            "ports": "3478",
+            "notes": "WhatsApp ServiceExtension",
             "process": "identifier.57T9237FN3/net.whatsapp.WhatsApp.ServiceExtension",
-            "remote-addresses": "*.*.*.*"
-        },
-        {
-            "action": "allow",
-            "notes": "WhatsApp ServiceExtension - port 443",
-            "ports": "443",
-            "process": "identifier.57T9237FN3/net.whatsapp.WhatsApp.ServiceExtension",
-            "remote-addresses": "*.*.*.*"
-        },
-        {
-            "action": "allow",
-            "notes": "WhatsApp ServiceExtension - IPv6 Facebook",
-            "process": "identifier.57T9237FN3/net.whatsapp.WhatsApp.ServiceExtension",
-            "remote-addresses": "2a03:2880:*:*:*:*:*:*"
-        },
-        {
-            "action": "allow",
-            "notes": "WhatsApp ServiceExtension - domain",
-            "process": "identifier.57T9237FN3/net.whatsapp.WhatsApp.ServiceExtension",
-            "remote-domains": "whatsapp.net"
+            "remote": "any"
         },
         {
             "action": "allow",
@@ -763,26 +716,10 @@
         },
         {
             "action": "allow",
-            "direction": "incoming",
-            "notes": "Gather - incoming",
-            "process": "identifier.W28UKP642P/com.gather.GatherV2",
-            "remote-addresses": [
-                "2a02:a018:106:9300:1b08:ca43:cdd3:2575",
-                "2a02:a018:106:9300:9be5:26ad:61d6:8ef0"
-            ]
-        },
-        {
-            "action": "allow",
+            "direction": "both",
             "notes": "Gather",
             "process": "identifier.W28UKP642P/com.gather.GatherV2",
-            "remote-domains": [
-                "cloudflare.com",
-                "featureassets.org",
-                "gather.town",
-                "googletagmanager.com",
-                "newrelic.com",
-                "us-east-2.amazonaws.com"
-            ]
+            "remote": "any"
         },
         {
             "action": "allow",
