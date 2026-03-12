@@ -1,12 +1,15 @@
 {
-    "description": "Trusted domains for all apps/processes",
-    "name": "Trusted Domains",
-    "rules": [
+    "description" : "Trusted domains for all apps/processes",
+    "name" : "Trusted Domains",
+    "rules" : [
         {
-            "action": "allow",
-            "notes": "Microsoft / Office 365 / Azure",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "Microsoft / Office 365 / Azure",
+            "remote-domains" : [
                 "appcenter.ms",
+                "azure.com",
+                "azure.net",
+                "azurecontainerapps.io",
                 "azurefd.net",
                 "cloud.microsoft",
                 "live.com",
@@ -24,14 +27,15 @@
                 "sharepointonline.com",
                 "skype.com",
                 "static.microsoft",
+                "visualstudio.com",
                 "windows.com",
                 "windows.net"
             ]
         },
         {
-            "action": "allow",
-            "notes": "Google Services",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "Google Services",
+            "remote-domains" : [
                 "dns.google",
                 "gcr.io",
                 "gmail.com",
@@ -43,16 +47,16 @@
             ]
         },
         {
-            "action": "allow",
-            "notes": "OVH Services",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "OVH Services",
+            "remote-domains" : [
                 "ovh.net"
             ]
         },
         {
-            "action": "allow",
-            "notes": "Adobe Creative Cloud & Services",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "Adobe Creative Cloud & Services",
+            "remote-domains" : [
                 "acrobat.com",
                 "adobe.com",
                 "adobe.io",
@@ -72,17 +76,17 @@
             ]
         },
         {
-            "action": "allow",
-            "notes": "GitHub",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "GitHub",
+            "remote-domains" : [
                 "github.com",
                 "githubusercontent.com"
             ]
         },
         {
-            "action": "allow",
-            "notes": "Apple",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "Apple",
+            "remote-domains" : [
                 "apple",
                 "apple-cloudkit.com",
                 "apple-mapkit.com",
@@ -96,140 +100,145 @@
             ]
         },
         {
-            "action": "allow",
-            "notes": "DocuSign",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "DocuSign",
+            "remote-domains" : [
                 "docucdn-a.akamaihd.net",
                 "docusign.net"
             ]
         },
         {
-            "action": "allow",
-            "notes": "Notion",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "Notion",
+            "remote-domains" : [
                 "notion-static.com",
                 "notion.so",
                 "notionusercontent.com"
             ]
         },
         {
-            "action": "allow",
-            "notes": "Spotify",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "Spotify",
+            "remote-domains" : [
                 "scdn.co",
                 "spotify.com",
                 "spotifycdn.com"
             ]
         },
         {
-            "action": "allow",
-            "notes": "SoundCloud",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "SoundCloud",
+            "remote-domains" : [
                 "sndcdn.com",
                 "soundcloud.cloud",
                 "soundcloud.com"
             ]
         },
         {
-            "action": "allow",
-            "notes": "Hyfen domains",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "Hyfen domains",
+            "remote-domains" : [
                 "hfyen.nl",
                 "hyfen.cloud",
                 "hyfen.eu"
             ]
         },
         {
-            "action": "allow",
-            "notes": "Trustup domains",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "Trustup domains",
+            "remote-domains" : [
                 "trustup.group",
                 "trustup.be"
             ]
         },
         {
-            "action": "allow",
-            "notes": "Development tools",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "Development tools",
+            "remote-domains" : [
                 "brew.sh",
+                "nodejs.org",
+                "npmjs.org",
+                "ondigitalocean.com",
                 "pypi.org",
+                "pythonhosted.org",
                 "responsively.app",
                 "simplesvg.com",
                 "supabase.co",
+                "supabase.com",
                 "todesktop.com",
                 "trivy.dev",
                 "linear.app"
             ]
         },
         {
-            "action": "allow",
-            "notes": "Certificate authorities",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "Certificate authorities",
+            "remote-domains" : [
                 "digicert.com",
                 "eurocert.pl"
             ]
         },
         {
-            "action": "allow",
-            "notes": "Monitoring & Analytics",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "Monitoring & Analytics",
+            "remote-domains" : [
                 "acompli.net",
                 "nr-data.net"
             ]
         },
         {
-            "action": "allow",
-            "notes": "Networking & VPN",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "Networking & VPN",
+            "remote-domains" : [
                 "openvpn.net",
                 "ui.com"
             ]
         },
         {
-            "action": "allow",
-            "notes": "Little Snitch (obdev)",
-            "remote-domains": "obdev.at"
+            "action" : "allow",
+            "notes" : "Little Snitch (obdev)",
+            "remote-domains" : "obdev.at"
         },
         {
-            "action": "allow",
-            "notes": "iStat Menus",
-            "remote-domains": "istatmenus.app"
+            "action" : "allow",
+            "notes" : "iStat Menus",
+            "remote-domains" : "istatmenus.app"
         },
         {
-            "action": "allow",
-            "notes": "Belgian services",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "Belgian services",
+            "remote-domains" : [
                 "eboxenterprise.be",
                 "peake.be"
             ]
         },
         {
-            "action": "allow",
-            "notes": "Legitimate Microsoft services IP Range",
-            "remote-addresses": "2603:1063::-2603:1063:1ff:ffff:ffff:ffff:ffff:ffff"
+            "action" : "allow",
+            "notes" : "Legitimate Microsoft services IP Range",
+            "remote-addresses" : "2603:1063::-2603:1063:1ff:ffff:ffff:ffff:ffff:ffff"
         },
         {
-            "action": "allow",
-            "notes": "Azure metadata IP",
-            "remote-addresses": "168.63.129.16"
+            "action" : "allow",
+            "notes" : "Azure metadata IP",
+            "remote-addresses" : "168.63.129.16"
         },
         {
-            "action": "allow",
-            "direction": "both",
-            "notes": "Local network",
-            "remote": "local-net"
+            "action" : "allow",
+            "direction" : "both",
+            "notes" : "Local network",
+            "remote" : "local-net"
         },
         {
-            "action": "allow",
-            "direction": "incoming",
-            "notes": "ICMP ping",
-            "protocol": "icmp",
-            "remote": "any"
+            "action" : "allow",
+            "direction" : "incoming",
+            "notes" : "ICMP ping",
+            "protocol" : "icmp",
+            "remote" : "any"
         },
         {
-            "action": "deny",
-            "notes": "Blocked telemetry",
-            "remote-domains": "sentry.io"
+            "action" : "deny",
+            "notes" : "Blocked telemetry",
+            "remote-domains" : "sentry.io"
         }
     ]
 }

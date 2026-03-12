@@ -1,24 +1,27 @@
 {
-  "description" : "Rules to reduce data use",
-  "name" : "Low Data",
-  "rules" : [
-    {
-      "action" : "deny",
-      "direction" : "both",
-      "process" : "identifier.APPLE\/com.apple.nsurlsessiond",
-      "remote" : "any"
-    },
-    {
-      "action" : "deny",
-      "direction" : "both",
-      "process" : "identifier.UBF8T346G9\/com.microsoft.OneDriveUpdaterDaemon",
-      "remote" : "any"
-    },
-    {
-      "action" : "deny",
-      "direction" : "both",
-      "process" : "identifier.APPLE\/com.apple.softwareupdated",
-      "remote" : "any"
-    }
-  ]
+    "description" : "Rules to reduce data use",
+    "name" : "Low Data",
+    "rules" : [
+        {
+            "action" : "deny",
+            "direction" : "both",
+            "notes" : "Apple URL session daemon - background data",
+            "process" : "identifier.APPLE/com.apple.nsurlsessiond",
+            "remote" : "any"
+        },
+        {
+            "action" : "deny",
+            "direction" : "both",
+            "notes" : "OneDrive updater daemon - background data",
+            "process" : "identifier.UBF8T346G9/com.microsoft.OneDriveUpdaterDaemon",
+            "remote" : "any"
+        },
+        {
+            "action" : "deny",
+            "direction" : "both",
+            "notes" : "Apple software update daemon - background data",
+            "process" : "identifier.APPLE/com.apple.softwareupdated",
+            "remote" : "any"
+        }
+    ]
 }

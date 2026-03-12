@@ -1,26 +1,26 @@
 {
-    "description": "Custom rules for specific apps",
-    "name": "Custom Apps",
-    "rules": [
+    "description" : "Custom rules for specific apps",
+    "name" : "Custom Apps",
+    "rules" : [
         {
-            "action": "allow",
-            "notes": "Global allow",
-            "remote-domains": "trivy.dev"
+            "action" : "allow",
+            "notes" : "Global allow",
+            "remote-domains" : "trivy.dev"
         },
         {
-            "action": "deny",
-            "notes": "Adobe Acrobat Pro - blocked domains",
-            "process": "identifier.JQ525L2MZD/com.adobe.Acrobat.Pro",
-            "remote-domains": [
+            "action" : "deny",
+            "notes" : "Adobe Acrobat Pro - blocked domains",
+            "process" : "identifier.JQ525L2MZD/com.adobe.Acrobat.Pro",
+            "remote-domains" : [
                 "demdex.net",
                 "typekit.net"
             ]
         },
         {
-            "action": "allow",
-            "notes": "Adobe Acrobat Pro - allowed",
-            "process": "identifier.JQ525L2MZD/com.adobe.Acrobat.Pro",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "Adobe Acrobat Pro - allowed",
+            "process" : "identifier.JQ525L2MZD/com.adobe.Acrobat.Pro",
+            "remote-domains" : [
                 "cloudfront.net",
                 "cookielaw.org",
                 "echosign.com",
@@ -29,681 +29,211 @@
             ]
         },
         {
-            "action": "deny",
-            "notes": "Adobe CRDaemon - block all",
-            "process": "identifier.JQ525L2MZD/com.adobe.AdobeCRDaemon",
-            "remote": "any"
+            "action" : "deny",
+            "notes" : "Adobe CRDaemon - block all",
+            "process" : "identifier.JQ525L2MZD/com.adobe.AdobeCRDaemon",
+            "remote" : "any"
         },
         {
-            "action": "deny",
-            "notes": "Adobe Creative Cloud - blocked domains",
-            "process": "identifier.JQ525L2MZD/com.adobe.acc.AdobeCreativeCloud",
-            "remote-domains": [
+            "action" : "deny",
+            "notes" : "Adobe Creative Cloud - blocked domains",
+            "process" : "identifier.JQ525L2MZD/com.adobe.acc.AdobeCreativeCloud",
+            "remote-domains" : [
                 "gvt1.com",
                 "typekit.net"
             ]
         },
         {
-            "action": "allow",
-            "notes": "Adobe Creative Cloud",
-            "process": "identifier.JQ525L2MZD/com.adobe.acc.AdobeCreativeCloud",
-            "remote": "any"
+            "action" : "allow",
+            "notes" : "Adobe Creative Cloud",
+            "process" : "identifier.JQ525L2MZD/com.adobe.acc.AdobeCreativeCloud",
+            "remote" : "any"
         },
         {
-            "action": "allow",
-            "notes": "Adobe Exchange Plugin",
-            "process": "identifier.JQ525L2MZD/com.adobe.ExchangePluginCustomHook",
-            "remote-domains": "adobe.io"
+            "action" : "allow",
+            "notes" : "Adobe Exchange Plugin",
+            "process" : "identifier.JQ525L2MZD/com.adobe.ExchangePluginCustomHook",
+            "remote-domains" : "adobe.io"
         },
         {
-            "action": "allow",
-            "notes": "Adobe Node",
-            "process": "identifier.JQ525L2MZD/node",
-            "remote": "any"
+            "action" : "allow",
+            "notes" : "Adobe Node",
+            "process" : "identifier.JQ525L2MZD/node",
+            "remote" : "any"
         },
         {
-            "action": "allow",
-            "notes": "Apple Calendar",
-            "process": "identifier.APPLE/com.apple.iCal",
-            "remote": "any"
+            "action" : "allow",
+            "notes" : "Apple Calendar",
+            "process" : "identifier.APPLE/com.apple.iCal",
+            "remote" : "any"
         },
         {
-            "action": "allow",
-            "notes": "Apple Mail - Google services",
-            "process": "identifier.APPLE/com.apple.mail",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "Apple Mail - Google services",
+            "process" : "identifier.APPLE/com.apple.mail",
+            "remote-domains" : [
                 "googleapis.com",
                 "googleusercontent.com",
                 "gstatic.com"
             ]
         },
         {
-            "action": "deny",
-            "notes": "Apple Mail - block rest",
-            "process": "identifier.APPLE/com.apple.mail",
-            "remote": "any"
+            "action" : "deny",
+            "notes" : "Apple Mail - block rest",
+            "process" : "identifier.APPLE/com.apple.mail",
+            "remote" : "any"
         },
         {
-            "action": "allow",
-            "notes": "Apple Music",
-            "process": "identifier.APPLE/com.apple.Music",
-            "remote": "any"
+            "action" : "allow",
+            "notes" : "Apple Music",
+            "process" : "identifier.APPLE/com.apple.Music",
+            "remote" : "any"
         },
         {
-            "action": "allow",
-            "notes": "Apple Passwords",
-            "process": "identifier.APPLE/com.apple.Passwords",
-            "remote": "any"
+            "action" : "allow",
+            "notes" : "Apple Passwords",
+            "process" : "identifier.APPLE/com.apple.Passwords",
+            "remote" : "any"
         },
         {
-            "action": "allow",
-            "notes": "Apple Podcasts",
-            "process": "identifier.APPLE/com.apple.podcasts",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "Apple Podcasts",
+            "process" : "identifier.APPLE/com.apple.podcasts",
+            "remote-domains" : [
                 "acast.com",
                 "podtrac.com",
                 "prxu.org"
             ]
         },
         {
-            "action": "allow",
-            "direction": "incoming",
-            "notes": "Safari - incoming",
-            "process": "identifier.APPLE/com.apple.Safari",
-            "remote-addresses": "17.248.250.10"
-        },
-        {
-            "action": "allow",
-            "notes": "Safari",
-            "process": "identifier.APPLE/com.apple.Safari",
-            "remote": "any"
-        },
-        {
-            "action": "allow",
-            "notes": "Terminal via curl - engie",
-            "process": "identifier.APPLE/com.apple.Terminal",
-            "remote-domains": "engie.be",
-            "via": "identifier.APPLE/com.apple.curl"
-        },
-        {
-            "action": "allow",
-            "notes": "Terminal via curl - influxdata",
-            "process": "identifier.APPLE/com.apple.Terminal",
-            "remote-domains": "influxdata.com",
-            "via": "identifier.APPLE/com.apple.curl"
-        },
-        {
-            "action": "allow",
-            "notes": "Bruno - allowed",
-            "process": "identifier.W7LPPWA48L/com.usebruno.app",
-            "remote-domains": [
-                "railway.app",
-                "textbuddy.nl"
+            "action" : "allow",
+            "direction" : "incoming",
+            "notes" : "Safari - incoming IPs",
+            "process" : "identifier.APPLE/com.apple.Safari",
+            "remote-addresses" : [
+                "17.248.250.10",
+                "151.101.3.6"
             ]
         },
         {
-            "action": "deny",
-            "notes": "Bruno - blocked telemetry",
-            "process": "identifier.W7LPPWA48L/com.usebruno.app",
-            "remote-domains": [
-                "posthog.com",
-                "usebruno.com"
+            "action" : "allow",
+            "notes" : "Safari",
+            "process" : "identifier.APPLE/com.apple.Safari",
+            "remote" : "any"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Terminal via curl - engie",
+            "process" : "identifier.APPLE/com.apple.Terminal",
+            "remote-domains" : "engie.be",
+            "via" : "identifier.APPLE/com.apple.curl"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Terminal via curl - influxdata",
+            "process" : "identifier.APPLE/com.apple.Terminal",
+            "remote-domains" : "influxdata.com",
+            "via" : "identifier.APPLE/com.apple.curl"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Terminal via gh - GitHub access",
+            "process" : "identifier.APPLE/com.apple.Terminal",
+            "remote-domains" : "github.com",
+            "via" : "path.opt/homebrew/Cellar/gh/*/bin/gh"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Terminal via Python 3.14 - development",
+            "process" : "identifier.APPLE/com.apple.Terminal",
+            "remote-domains" : [
+                "github.com",
+                "pypi.org",
+                "pythonhosted.org"
+            ],
+            "via" : "path.opt/homebrew/Cellar/python@3.14/*/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Terminal via Python 3.14 - local network",
+            "process" : "identifier.APPLE/com.apple.Terminal",
+            "remote-addresses" : "192.168.1.254",
+            "via" : "path.opt/homebrew/Cellar/python@3.14/*/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Apple trustd",
+            "process" : "identifier.APPLE/com.apple.trustd",
+            "remote" : "any"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Terminal via Node",
+            "process" : "identifier.APPLE/com.apple.Terminal",
+            "remote-domains" : [
+                "anthropic.com",
+                "claude.com",
+                "datadoghq.com",
+                "npmjs.org"
+            ],
+            "via" : "identifier.HX7739G8FX/node"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Terminal via ping",
+            "process" : "identifier.APPLE/com.apple.Terminal",
+            "remote" : "any",
+            "via" : "identifier.APPLE/com.apple.ping"
+        },
+        {
+            "action" : "allow",
+            "notes" : "ChatGPT Helper",
+            "ports" : "443",
+            "process" : "identifier.2DC432GLL2/ChatGPTHelper",
+            "protocol" : "tcp",
+            "remote-domains" : [
+                "chatgpt.com",
+                "openai.com"
             ]
         },
         {
-            "action": "allow",
-            "notes": "ChatGPT Helper",
-            "ports": "443",
-            "process": "identifier.2DC432GLL2/ChatGPTHelper",
-            "protocol": "tcp",
-            "remote": "any"
+            "action" : "allow",
+            "disabled" : true,
+            "notes" : "ChatGPT Helper - iOS (disabled)",
+            "process" : "identifier.2DC432GLL2/ChatGPTHelper",
+            "remote-hosts" : "ios.chat.openai.com"
         },
         {
-            "action": "allow",
-            "disabled": true,
-            "notes": "ChatGPT Helper - iOS (disabled)",
-            "process": "identifier.2DC432GLL2/ChatGPTHelper",
-            "remote-hosts": "ios.chat.openai.com"
+            "action" : "allow",
+            "notes" : "ChatGPT - TCP 443",
+            "ports" : "443",
+            "process" : "identifier.2DC432GLL2/com.openai.chat",
+            "protocol" : "tcp",
+            "remote" : "any"
         },
         {
-            "action": "allow",
-            "notes": "ChatGPT - TCP 443",
-            "ports": "443",
-            "process": "identifier.2DC432GLL2/com.openai.chat",
-            "protocol": "tcp",
-            "remote": "any"
+            "action" : "allow",
+            "notes" : "ChatGPT - UDP 443",
+            "ports" : "443",
+            "process" : "identifier.2DC432GLL2/com.openai.chat",
+            "protocol" : "udp",
+            "remote" : "any"
         },
         {
-            "action": "allow",
-            "notes": "ChatGPT - UDP 443",
-            "ports": "443",
-            "process": "identifier.2DC432GLL2/com.openai.chat",
-            "protocol": "udp",
-            "remote": "any"
-        },
-        {
-            "action": "allow",
-            "notes": "ChatGPT - IP addresses",
-            "process": "identifier.2DC432GLL2/com.openai.chat",
-            "remote-addresses": [
+            "action" : "allow",
+            "notes" : "ChatGPT - IP addresses",
+            "process" : "identifier.2DC432GLL2/com.openai.chat",
+            "remote-addresses" : [
                 "20.162.96.163",
                 "52.143.181.161",
                 "135.220.40.201"
             ]
         },
         {
-            "action": "allow",
-            "notes": "Cursor",
-            "process": "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
-            "remote-domains": [
-                "anthropic.com",
-                "apphb.com",
-                "azure.com",
-                "claude.ai",
-                "claude.com",
-                "cursor-cdn.com",
-                "cursor.com",
-                "cursor.sh",
-                "cursorapi.com",
-                "datadoghq.com",
-                "docker.io",
-                "exp-tas.com",
-                "ghcr.io",
-                "github.com",
-                "githubusercontent.com",
-                "influxdata.com",
-                "mongodb.net",
-                "nodejs.org",
-                "npmjs.org",
-                "ondigitalocean.com",
-                "pythonhosted.org",
-                "railway.app",
-                "s3.amazonaws.com",
-                "shields.io",
-                "visualstudio.com"
-            ]
-        },
-        {
-            "action": "allow",
-            "notes": "Cursor via Python 3.14",
-            "process": "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
-            "remote": "any",
-            "via": "path.opt\/homebrew\/Cellar\/python@3.14\/*\/Frameworks\/Python.framework\/Versions\/3.14\/Resources\/Python.app\/Contents\/MacOS\/Python"
-        },
-        {
-            "action": "allow",
-            "notes": "Cursor via Selenium",
-            "process": "identifier.VDXQ22DGB9\/com.todesktop.230313mzl4w4u92",
-            "remote-domains": [
-                "github.io",
-                "googleapis.com",
-                "plausible.io"
-            ],
-            "via": "path.*/Library/Python/*/lib/python/site-packages/selenium/webdriver/common/macos/selenium-manager"
-        },
-        {
-            "action": "allow",
-            "notes": "Dell Display Manager",
-            "process": "identifier.76K5J93FY6/Qisda.DDPM",
-            "remote-domains": "dell.com"
-        },
-        {
-            "action": "deny",
-            "notes": "Dell Display Manager - block rest",
-            "process": "identifier.76K5J93FY6/Qisda.DDPM"
-        },
-        {
-            "action": "allow",
-            "notes": "Docker",
-            "process": "identifier.9BNSXJN65R\/com.docker.docker",
-            "remote": "any"
-        },
-        {
-            "action": "allow",
-            "notes": "Figma Agent",
-            "ports": "443",
-            "process": "identifier.T8RA8NE3B7\/com.figma.agent",
-            "protocol": "tcp",
-            "remote-domains": "figma.com"
-        },
-        {
-            "action": "deny",
-            "notes": "Figma Desktop - blocked",
-            "process": "identifier.T8RA8NE3B7/com.figma.Desktop",
-            "remote-domains": "statsigapi.net"
-        },
-        {
-            "action": "allow",
-            "notes": "Figma Desktop",
-            "process": "identifier.T8RA8NE3B7/com.figma.Desktop",
-            "remote-domains": [
-                "awswaf.com",
-                "browser-intake-datadoghq.com",
-                "figma.com",
-                "gravatar.com",
-                "wp.com"
-            ]
-        },
-        {
-            "action": "allow",
-            "notes": "Figma Desktop DUA",
-            "process": "identifier.T8RA8NE3B7/com.figma.Desktop.dua",
-            "remote-domains": "figma.com"
-        },
-        {
-            "action": "allow",
-            "notes": "Home Assistant",
-            "process": "identifier.QMQYCKL255\/io.robbie.HomeAssistant",
-            "remote": "any"
-        },
-        {
-            "action": "allow",
-            "notes": "Home Assistant - domains",
-            "process": "identifier.QMQYCKL255/io.robbie.HomeAssistant",
-            "remote-domains": [
-                "cartocdn.com",
-                "githubusercontent.com",
-                "googleapis.com",
-                "home-assistant.io",
-                "nabu.casa"
-            ]
-        },
-        {
-            "action": "allow",
-            "notes": "iStat Menus",
-            "process": "identifier.Y93TK974AT\/com.bjango.istatmenus",
-            "remote": "any"
-        },
-        {
-            "action": "allow",
-            "notes": "Intune MDM",
-            "process": "identifier.UBF8T346G9/IntuneMdmDaemon",
-            "remote-domains": "appcenter.ms"
-        },
-        {
-            "action": "allow",
-            "notes": "Linear",
-            "process": "identifier.7VZ2S3V9RV/com.linear",
-            "remote-domains": [
-                "figma.com",
-                "githubassets.com",
-                "gravatar.com",
-                "linear.app",
-                "slack-edge.com",
-                "youtube.com"
-            ]
-        },
-        {
-            "action": "allow",
-            "notes": "Little Snitch Networking",
-            "process": "identifier.MLZF7K7B5R/at.obdev.littlesnitch.networking",
-            "remote": "any"
-        },
-        {
-            "action": "allow",
-            "notes": "Little Snitch Software Update",
-            "process": "identifier.MLZF7K7B5R/at.obdev.littlesnitch.softwareupdate",
-            "remote": "any"
-        },
-        {
-            "action": "deny",
-            "notes": "Microsoft Error Reporting - block",
-            "process": "identifier.UBF8T346G9/com.microsoft.errorreporting",
-            "remote-domains": [
-                "azurewebsites.net",
-                "microsoft.com"
-            ]
-        },
-        {
-            "action": "allow",
-            "notes": "Microsoft Excel",
-            "process": "identifier.UBF8T346G9/com.microsoft.Excel",
-            "remote-domains": [
-                "azurewebsites.net",
-                "microsoftusercontent.com",
-                "svc.ms"
-            ]
-        },
-        {
-            "action": "allow",
-            "notes": "Microsoft OneDrive",
-            "process": "identifier.UBF8T346G9/com.microsoft.OneDrive",
-            "remote-domains": [
-                "msn.com",
-                "trafficmanager.net"
-            ]
-        },
-        {
-            "action": "deny",
-            "notes": "Microsoft Outlook - blocked hosts",
-            "process": "identifier.UBF8T346G9/com.microsoft.Outlook",
-            "remote-hosts": [
-                "click.email.openvpn.net",
-                "usw2-track.atlassian.com"
-            ]
-        },
-        {
-            "action": "deny",
-            "notes": "Microsoft Outlook - blocked domains",
-            "process": "identifier.UBF8T346G9/com.microsoft.Outlook",
-            "remote-domains": [
-                "adnxs.com",
-                "azurefd.net",
-                "hs-service-engage.com",
-                "pipedrive.email",
-                "planhat.com",
-                "sendibt3.com",
-                "ucm.be",
-                "unifiedpost.com"
-            ]
-        },
-        {
-            "action": "allow",
-            "notes": "Microsoft Outlook - allowed hosts",
-            "process": "identifier.UBF8T346G9/com.microsoft.Outlook",
-            "remote-hosts": "nam.safelink.emails.azure.net"
-        },
-        {
-            "action": "allow",
-            "notes": "Microsoft Outlook - allowed domains",
-            "process": "identifier.UBF8T346G9/com.microsoft.Outlook",
-            "remote-domains": [
-                "azurewebsites.net",
-                "c.gle",
-                "chargebee.com",
-                "msn.com",
-                "outlook.com",
-                "posthog.com",
-                "recruitee.com"
-            ]
-        },
-        {
-            "action": "allow",
-            "notes": "Microsoft PowerPoint",
-            "process": "identifier.UBF8T346G9/com.microsoft.Powerpoint",
-            "remote": "any"
-        },
-        {
-            "action": "allow",
-            "notes": "Microsoft PowerPoint - domains",
-            "process": "identifier.UBF8T346G9/com.microsoft.Powerpoint",
-            "remote-domains": "azurewebsites.net"
-        },
-        {
-            "action": "allow",
-            "notes": "Microsoft AutoUpdate",
-            "process": "identifier.UBF8T346G9/com.microsoft.autoupdate.fba",
-            "remote-domains": "azurewebsites.net"
-        },
-        {
-            "action": "allow",
-            "direction": "both",
-            "notes": "Microsoft Teams",
-            "process": "identifier.UBF8T346G9/com.microsoft.teams2",
-            "remote": "any"
-        },
-        {
-            "action": "allow",
-            "notes": "Microsoft To Do",
-            "process": "identifier.UBF8T346G9/com.microsoft.to-do-mac",
-            "remote-domains": "msauthimages.net"
-        },
-        {
-            "action": "allow",
-            "notes": "Microsoft Word",
-            "process": "identifier.UBF8T346G9/com.microsoft.Word",
-            "remote-domains": [
-                "azurewebsites.net",
-                "svc.ms"
-            ]
-        },
-        {
-            "action": "allow",
-            "notes": "MongoDB Compass",
-            "process": "identifier.4XWMY46275/com.mongodb.compass",
-            "remote-domains": [
-                "azure.com",
-                "mongodb.com",
-                "mongodb.net"
-            ],
-            "remote-hosts": "api.segment.io"
-        },
-        {
-            "action": "deny",
-            "notes": "MongoDB Compass",
-            "process": "identifier.4XWMY46275/com.mongodb.compass",
-            "remote-domains": [
-                "intercom.io"
-            ]
-        },
-        {
-            "action": "allow",
-            "notes": "Ninox",
-            "process": "identifier.BJE6SD455T/de.ninoxdb.ninox-mac.Ninox",
-            "remote-domains": [
-                "ninox.com",
-                "sentry.io"
-            ]
-        },
-        {
-            "action": "allow",
-            "notes": "NordVPN",
-            "process": "identifier.W5W395V82Y/com.nordvpn.macos",
-            "remote": "any"
-        },
-        {
-            "action": "deny",
-            "notes": "NordVPN Helper - block telemetry",
-            "process": "identifier.W5W395V82Y/com.nordvpn.macos.helper",
-            "remote-domains": [
-                "crashlytics.com",
-                "googleapis.com"
-            ]
-        },
-        {
-            "action": "allow",
-            "notes": "Notion Allow",
-            "process": "identifier.LBQJ96FQ8D/notion.id",
-            "remote-domains": [
-                "figma.com",
-                "gravatar.com",
-                "notion.com",
-                "s3-us-west-2.amazonaws.com",
-                "splunkcloud.com",
-                "trunkbaseddevelopment.com",
-                "us-west-2.amazonaws.com",
-                "wp.com"
-            ]
-        },
-        {
-            "action": "deny",
-            "notes": "Notion Deny",
-            "process": "identifier.LBQJ96FQ8D/notion.id",
-            "remote-domains": [
-                "gist.build", 
-                "sentry.io",
-                "customer.io"
-            ]
-        },
-        {
-            "action": "allow",
-            "notes": "OpenVPN",
-            "process": "identifier.ACV7L3WCD8/org.openvpn.client.app",
-            "remote": "any"
-        },
-        {
-            "action": "allow",
-            "notes": "OpenVPN Helper",
-            "process": "identifier.ACV7L3WCD8/org.openvpn.client.app.helper",
-            "remote": "any"
-        },
-        {
-            "action": "deny",
-            "notes": "Responsively - blocked",
-            "process": "identifier.M4H33HFC4K/app.responsively",
-            "remote-addresses": "168.63.129.16"
-        },
-        {
-            "action": "deny",
-            "notes": "Responsively - blocked domains",
-            "process": "identifier.M4H33HFC4K/app.responsively",
-            "remote-domains": "xupea.com"
-        },
-        {
-            "action": "allow",
-            "notes": "Responsively - allowed",
-            "process": "identifier.M4H33HFC4K/app.responsively",
-            "remote-domains": [
-                "iconify.design",
-                "unisvg.com"
-            ]
-        },
-        {
-            "action": "deny",
-            "notes": "Slack - blocked",
-            "process": "identifier.BQR82RBBHL/com.tinyspeck.slackmacgap",
-            "remote-domains": [
-                "ggpht.com",
-                "ytimg.com"
-            ]
-        },
-        {
-            "action": "allow",
-            "notes": "Slack",
-            "process": "identifier.BQR82RBBHL/com.tinyspeck.slackmacgap",
-            "remote-domains": [
-                "chime.aws",
-                "doubleclick.net",
-                "googlevideo.com",
-                "s3-us-west-2.amazonaws.com",
-                "slack-edge.com",
-                "slack-imgs.com",
-                "slack.com",
-                "slackb.com",
-                "tenor.com",
-                "youtube.com"
-            ]
-        },
-        {
-            "action": "deny",
-            "notes": "Sublime Text - block license check",
-            "process": "identifier.Z6D26JE4Y4/com.sublimetext.4",
-            "remote-domains": "sublimetext.com"
-        },
-        {
-            "action": "allow",
-            "notes": "Ubiquiti Protect - IP addresses",
-            "process": "identifier.4P645293E8/com.ubnt.protect",
-            "remote-addresses": [
-                "104.30.145.0-104.30.150.255",
-                "141.101.90.1",
-                "162.159.207.0",
-                "213.213.212.102",
-                "233.89.188.1",
-                "255.255.255.255",
-                "2606:4700:49::",
-                "2a06:98c1:3200::1"
-            ]
-        },
-        {
-            "action": "allow",
-            "notes": "Ubiquiti Protect - domains",
-            "process": "identifier.4P645293E8/com.ubnt.protect",
-            "remote-domains": [
-                "app-analytics-services.com",
-                "cloudflare.com",
-                "crashlytics.com",
-                "googleapis.com",
-                "ubnt.com",
-                "us-west-2.amazonaws.com"
-            ]
-        },
-        {
-            "action": "allow",
-            "notes": "Ubiquiti WiFiman",
-            "process": "identifier.4P645293E8/com.ubnt.wifiman",
-            "remote": "any"
-        },
-        {
-            "action": "allow",
-            "notes": "Ubiquiti WiFiman Tunnel - IPs",
-            "process": "identifier.4P645293E8/com.ubnt.wifiman.packet-tunnel",
-            "remote-addresses": [
-                "194.88.100.2",
-                "213.213.212.102"
-            ]
-        },
-        {
-            "action": "allow",
-            "notes": "Ubiquiti WiFiman Tunnel - domains",
-            "process": "identifier.4P645293E8/com.ubnt.wifiman.packet-tunnel",
-            "remote-domains": [
-                "crashlytics.com",
-                "googleapis.com",
-                "twilio.com",
-                "ubnt.com"
-            ]
-        },
-        {
-            "action": "allow",
-            "notes": "WhatsApp",
-            "process": "identifier.57T9237FN3/net.whatsapp.WhatsApp",
-            "remote": "any"
-        },
-        {
-            "action": "deny",
-            "notes": "WhatsApp - block Fastly",
-            "process": "identifier.57T9237FN3/net.whatsapp.WhatsApp",
-            "remote-domains": "fastly-masque.net"
-        },
-        {
-            "action": "allow",
-            "notes": "WhatsApp - allowed domains",
-            "process": "identifier.57T9237FN3/net.whatsapp.WhatsApp",
-            "remote-domains": [
-                "akaquill.net",
-                "cloudflare.com",
-                "dns.google",
-                "giphy.com",
-                "whatsapp.net"
-            ]
-        },
-        {
-            "action": "allow",
-            "notes": "WhatsApp ServiceExtension",
-            "process": "identifier.57T9237FN3/net.whatsapp.WhatsApp.ServiceExtension",
-            "remote": "any"
-        },
-        {
-            "action": "allow",
-            "notes": "Apple trustd",
-            "process": "identifier.APPLE/com.apple.trustd",
-            "remote": "any"
-        },
-        {
-            "action": "allow",
-            "notes": "Terminal via Node",
-            "process": "identifier.APPLE/com.apple.Terminal",
-            "remote-domains": [
-                "anthropic.com",
-                "claude.com",
-                "datadoghq.com",
-                "npmjs.org"
-            ],
-            "via": "identifier.HX7739G8FX/node"
-        },
-        {
-            "action": "allow",
-            "notes": "Terminal via ping",
-            "process": "identifier.APPLE/com.apple.Terminal",
-            "remote": "any",
-            "via": "identifier.APPLE/com.apple.ping"
-        },
-        {
-            "action": "allow",
-            "notes": "Conductor",
-            "process": "identifier.27XN666UJ7/com.conductor.app",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "Conductor",
+            "process" : "identifier.27XN666UJ7/com.conductor.app",
+            "remote-domains" : [
                 "anthropic.com",
                 "chorus.sh",
                 "conductor.build",
@@ -715,29 +245,153 @@
             ]
         },
         {
-            "action": "allow",
-            "direction": "both",
-            "notes": "Gather",
-            "process": "identifier.W28UKP642P/com.gather.GatherV2",
-            "remote": "any"
+            "action" : "allow",
+            "notes" : "DBeaver - database tool",
+            "process" : "identifier.42B6MDKMW8/org.jkiss.dbeaver.core.product",
+            "remote-domains" : [
+                "dbeaver.io",
+                "maven.org"
+            ]
         },
         {
-            "action": "allow",
-            "notes": "Google Chrome",
-            "process": "identifier.EQHXZ8M8AV/com.google.Chrome",
-            "remote": "any"
+            "action" : "allow",
+            "notes" : "MongoDB Compass",
+            "process" : "identifier.4XWMY46275/com.mongodb.compass",
+            "remote-domains" : [
+                "azure.com",
+                "mongodb.com",
+                "mongodb.net"
+            ],
+            "remote-hosts" : "api.segment.io"
         },
         {
-            "action": "allow",
-            "notes": "Google Drive FS",
-            "process": "identifier.EQHXZ8M8AV/com.google.drivefs",
-            "remote": "any"
+            "action" : "deny",
+            "notes" : "MongoDB Compass",
+            "process" : "identifier.4XWMY46275/com.mongodb.compass",
+            "remote-domains" : [
+                "intercom.io"
+            ]
         },
         {
-            "action": "allow",
-            "notes": "MacWhisper",
-            "process": "identifier.8Q7TMPA46J/com.goodsnooze.MacWhisper",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "Ubiquiti Protect - IP addresses",
+            "process" : "identifier.4P645293E8/com.ubnt.protect",
+            "remote-addresses" : [
+                "104.30.145.0-104.30.150.255",
+                "141.101.90.1",
+                "162.159.207.0",
+                "213.213.212.102",
+                "233.89.188.1",
+                "255.255.255.255",
+                "2606:4700:49::",
+                "2a06:98c1:3200::1"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "Ubiquiti Protect - domains",
+            "process" : "identifier.4P645293E8/com.ubnt.protect",
+            "remote-domains" : [
+                "app-analytics-services.com",
+                "cloudflare.com",
+                "crashlytics.com",
+                "googleapis.com",
+                "ubnt.com",
+                "us-west-2.amazonaws.com"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "Ubiquiti WiFiman",
+            "process" : "identifier.4P645293E8/com.ubnt.wifiman",
+            "remote" : "any"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Ubiquiti WiFiman Tunnel - IPs",
+            "process" : "identifier.4P645293E8/com.ubnt.wifiman.packet-tunnel",
+            "remote-addresses" : [
+                "194.88.100.2",
+                "213.213.212.102"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "Ubiquiti WiFiman Tunnel - domains",
+            "process" : "identifier.4P645293E8/com.ubnt.wifiman.packet-tunnel",
+            "remote-domains" : [
+                "crashlytics.com",
+                "googleapis.com",
+                "twilio.com",
+                "ubnt.com"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "WhatsApp",
+            "process" : "identifier.57T9237FN3/net.whatsapp.WhatsApp",
+            "remote" : "any"
+        },
+        {
+            "action" : "deny",
+            "notes" : "WhatsApp - block Fastly",
+            "process" : "identifier.57T9237FN3/net.whatsapp.WhatsApp",
+            "remote-domains" : "fastly-masque.net"
+        },
+        {
+            "action" : "allow",
+            "notes" : "WhatsApp - allowed domains",
+            "process" : "identifier.57T9237FN3/net.whatsapp.WhatsApp",
+            "remote-domains" : [
+                "akaquill.net",
+                "cloudflare.com",
+                "dns.google",
+                "giphy.com",
+                "whatsapp.net"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "WhatsApp ServiceExtension",
+            "process" : "identifier.57T9237FN3/net.whatsapp.WhatsApp.ServiceExtension",
+            "remote" : "any"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Dell Display Manager",
+            "process" : "identifier.76K5J93FY6/Qisda.DDPM",
+            "remote-domains" : "dell.com"
+        },
+        {
+            "action" : "deny",
+            "notes" : "Dell Display Manager - block rest",
+            "process" : "identifier.76K5J93FY6/Qisda.DDPM"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Linear",
+            "process" : "identifier.7VZ2S3V9RV/com.linear",
+            "remote-domains" : [
+                "cloudflare.com",
+                "figma.com",
+                "githubassets.com",
+                "gravatar.com",
+                "linear.app",
+                "slack-edge.com",
+                "youtube.com"
+            ]
+        },
+        {
+            "action" : "deny",
+            "notes" : "Linear - block telemetry",
+            "process" : "identifier.7VZ2S3V9RV/com.linear",
+            "remote-domains" : "statsigapi.net"
+        },
+        {
+            "action" : "allow",
+            "notes" : "MacWhisper",
+            "process" : "identifier.8Q7TMPA46J/com.goodsnooze.MacWhisper",
+            "remote-domains" : [
                 "argmaxinc.com",
                 "fly.dev",
                 "github.io",
@@ -751,27 +405,120 @@
             ]
         },
         {
-            "action": "allow",
-            "notes": "MySQL Workbench",
-            "process": "identifier.VB5E2TV963/com.oracle.workbench.MySQLWorkbench",
-            "remote-domains": "ondigitalocean.com"
+            "action" : "allow",
+            "notes" : "Docker Desktop",
+            "process" : "identifier.9BNSXJN65R/com.electron.dockerdesktop",
+            "remote-domains" : "bugsnag.com"
         },
         {
-            "action": "allow",
-            "notes": "Notion Calendar (Cron)",
-            "process": "identifier.LBQJ96FQ8D/com.cron.electron",
-            "remote-domains": [
-                "cloudflare.com",
-                "notion.com",
-                "s3-us-west-2.amazonaws.com",
-                "splunkcloud.com"
+            "action" : "allow",
+            "notes" : "Docker",
+            "process" : "identifier.9BNSXJN65R/com.docker.docker",
+            "remote" : "any"
+        },
+        {
+            "action" : "deny",
+            "notes" : "Bruno - blocked telemetry",
+            "process" : "identifier.W7LPPWA48L/com.usebruno.app",
+            "remote-domains" : [
+                "posthog.com",
+                "usebruno.com"
             ]
         },
         {
-            "action": "allow",
-            "notes": "Notion Mail",
-            "process": "identifier.LBQJ96FQ8D/notion.mail.id",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "Bruno - allowed",
+            "process" : "identifier.W7LPPWA48L/com.usebruno.app",
+            "remote-domains" : [
+                "railway.app",
+                "textbuddy.nl"
+            ]
+        },
+        {
+            "action" : "deny",
+            "notes" : "Slack - blocked",
+            "process" : "identifier.BQR82RBBHL/com.tinyspeck.slackmacgap",
+            "remote-domains" : [
+                "ggpht.com",
+                "ytimg.com"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "Slack",
+            "process" : "identifier.BQR82RBBHL/com.tinyspeck.slackmacgap",
+            "remote-domains" : [
+                "chime.aws",
+                "d3mhjf54oqinl2.cloudfront.net",
+                "doubleclick.net",
+                "googlevideo.com",
+                "s3-us-west-2.amazonaws.com",
+                "slack-edge.com",
+                "slack-imgs.com",
+                "slack.com",
+                "slackb.com",
+                "tenor.com",
+                "youtube.com"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "Google Chrome",
+            "process" : "identifier.EQHXZ8M8AV/com.google.Chrome",
+            "remote" : "any"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Google Drive FS",
+            "process" : "identifier.EQHXZ8M8AV/com.google.drivefs",
+            "remote" : "any"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Notion Allow",
+            "process" : "identifier.LBQJ96FQ8D/notion.id",
+            "remote-domains" : [
+                "ctfassets.net",
+                "customeriomail.com",
+                "figma.com",
+                "gravatar.com",
+                "notion.com",
+                "s3-us-west-2.amazonaws.com",
+                "splunkcloud.com",
+                "trunkbaseddevelopment.com",
+                "us-west-2.amazonaws.com",
+                "wp.com"
+            ]
+        },
+        {
+            "action" : "deny",
+            "notes" : "Notion Deny",
+            "process" : "identifier.LBQJ96FQ8D/notion.id",
+            "remote-domains" : [
+                "gist.build",
+                "sentry.io",
+                "customer.io"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "Notion Calendar (Cron)",
+            "process" : "identifier.LBQJ96FQ8D/com.cron.electron",
+            "remote-domains" : [
+                "cloudflare.com",
+                "i.vimeocdn.com",
+                "notion.com",
+                "s3-us-west-2.amazonaws.com",
+                "splunkcloud.com",
+                "vimeo.com"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "Notion Mail",
+            "process" : "identifier.LBQJ96FQ8D/notion.mail.id",
+            "remote-addresses" : "104.18.37.97",
+            "remote-domains" : [
                 "decagon.ai",
                 "featureassets.org",
                 "prodregistryv2.org",
@@ -781,10 +528,302 @@
             ]
         },
         {
-            "action": "allow",
-            "notes": "Rotato",
-            "process": "identifier.UDGLB23X37/com.mortenjust.Rendermock",
-            "remote-domains": [
+            "action" : "allow",
+            "notes" : "Tor Browser",
+            "process" : "identifier.MADPSAYN6T/org.torproject.torbrowser",
+            "remote-addresses" : [
+                "5.2.72.110",
+                "37.218.245.14",
+                "45.145.95.6",
+                "80.67.167.81",
+                "82.221.131.5",
+                "107.189.8.226",
+                "146.57.248.225",
+                "209.148.46.65",
+                "212.83.43.74",
+                "212.83.43.95"
+            ],
+            "remote-domains" : "vuejs.org"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Little Snitch Networking",
+            "process" : "identifier.MLZF7K7B5R/at.obdev.littlesnitch.networking",
+            "remote" : "any"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Little Snitch Software Update",
+            "process" : "identifier.MLZF7K7B5R/at.obdev.littlesnitch.softwareupdate",
+            "remote" : "any"
+        },
+        {
+            "action" : "allow",
+            "notes" : "SideNotes - app and payment",
+            "process" : "identifier.MLZTD8K9AU/com.apptorium.SideNotes-paddle",
+            "remote-domains" : [
+                "apptorium.com",
+                "paddle.com",
+                "paddleapi.com",
+                "s3.amazonaws.com"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "Responsively - allowed",
+            "process" : "identifier.M4H33HFC4K/app.responsively",
+            "remote-domains" : [
+                "iconify.design",
+                "unisvg.com"
+            ]
+        },
+        {
+            "action" : "deny",
+            "notes" : "Responsively - blocked",
+            "process" : "identifier.M4H33HFC4K/app.responsively",
+            "remote-addresses" : "168.63.129.16"
+        },
+        {
+            "action" : "deny",
+            "notes" : "Responsively - blocked domains",
+            "process" : "identifier.M4H33HFC4K/app.responsively",
+            "remote-domains" : "xupea.com"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Claude Code - Anthropic app variant",
+            "process" : "identifier.Q6L2SF6YDW/com.anthropic.claude-code",
+            "remote-domains" : [
+                "anthropic.com",
+                "antstack.com",
+                "boardshape.com",
+                "claude.com",
+                "datadoghq.com",
+                "designrevision.com",
+                "makerkit.dev",
+                "mansueli.com",
+                "permit.io",
+                "stacksync.com",
+                "substack.com",
+                "supabase.com"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "Claude Desktop - Anthropic app",
+            "process" : "identifier.Q6L2SF6YDW/com.anthropic.claudefordesktop",
+            "remote-addresses" : "179.60.195.12",
+            "remote-domains" : [
+                "ahrefs.com",
+                "anthropic.com",
+                "candid.org",
+                "claude.ai",
+                "claude.com",
+                "claudemcpcontent.com",
+                "claudeusercontent.com",
+                "context7.com",
+                "datadoghq.com",
+                "datocms-assets.com",
+                "diagrams.net",
+                "directbooker.ai",
+                "docusign.com",
+                "dremio.com",
+                "facebook.net",
+                "figma.com",
+                "hhs.gov",
+                "honeycomb.io",
+                "hs-scripts.com",
+                "intercom.io",
+                "intercomcdn.com",
+                "launchpadcontent.net",
+                "lilt.com",
+                "nih.gov",
+                "nodesource.com",
+                "pubmed.gov",
+                "sanity.io",
+                "snapcraft.io",
+                "snapcraftcontent.com",
+                "stripe.com",
+                "stripe.network",
+                "ubuntu.com",
+                "website-files.com"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "Home Assistant",
+            "process" : "identifier.QMQYCKL255/io.robbie.HomeAssistant",
+            "remote" : "any"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Home Assistant - domains",
+            "process" : "identifier.QMQYCKL255/io.robbie.HomeAssistant",
+            "remote-domains" : [
+                "cartocdn.com",
+                "githubusercontent.com",
+                "googleapis.com",
+                "home-assistant.io",
+                "nabu.casa"
+            ]
+        },
+        {
+            "action" : "deny",
+            "notes" : "Figma Desktop - blocked telemetry",
+            "process" : "identifier.T8RA8NE3B7/com.figma.Desktop",
+            "remote-domains" : "statsigapi.net"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Figma Desktop",
+            "process" : "identifier.T8RA8NE3B7/com.figma.Desktop",
+            "remote-domains" : [
+                "awswaf.com",
+                "browser-intake-datadoghq.com",
+                "cloudflare-dns.com",
+                "figma.com",
+                "gravatar.com",
+                "prodregistryv2.org",
+                "wp.com"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "Figma Agent",
+            "ports" : "443",
+            "process" : "identifier.T8RA8NE3B7/com.figma.agent",
+            "protocol" : "tcp",
+            "remote-domains" : "figma.com"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Figma Desktop DUA",
+            "process" : "identifier.T8RA8NE3B7/com.figma.Desktop.dua",
+            "remote-domains" : "figma.com"
+        },
+        {
+            "action" : "deny",
+            "notes" : "Microsoft Error Reporting - block",
+            "process" : "identifier.UBF8T346G9/com.microsoft.errorreporting",
+            "remote-domains" : [
+                "azurewebsites.net",
+                "microsoft.com"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "Microsoft Excel",
+            "process" : "identifier.UBF8T346G9/com.microsoft.Excel",
+            "remote-domains" : [
+                "azurewebsites.net",
+                "microsoftusercontent.com",
+                "svc.ms"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "Microsoft OneDrive",
+            "process" : "identifier.UBF8T346G9/com.microsoft.OneDrive",
+            "remote-domains" : [
+                "msn.com",
+                "trafficmanager.net"
+            ]
+        },
+        {
+            "action" : "deny",
+            "notes" : "Microsoft Outlook - blocked hosts",
+            "process" : "identifier.UBF8T346G9/com.microsoft.Outlook",
+            "remote-hosts" : [
+                "click.email.openvpn.net",
+                "usw2-track.atlassian.com"
+            ]
+        },
+        {
+            "action" : "deny",
+            "notes" : "Microsoft Outlook - blocked domains",
+            "process" : "identifier.UBF8T346G9/com.microsoft.Outlook",
+            "remote-domains" : [
+                "adnxs.com",
+                "azurefd.net",
+                "hs-service-engage.com",
+                "pipedrive.email",
+                "planhat.com",
+                "sendibt3.com",
+                "ucm.be",
+                "unifiedpost.com"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "Microsoft Outlook - allowed hosts",
+            "process" : "identifier.UBF8T346G9/com.microsoft.Outlook",
+            "remote-hosts" : "nam.safelink.emails.azure.net"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Microsoft Outlook - allowed domains",
+            "process" : "identifier.UBF8T346G9/com.microsoft.Outlook",
+            "remote-domains" : [
+                "azurewebsites.net",
+                "c.gle",
+                "chargebee.com",
+                "msn.com",
+                "outlook.com",
+                "posthog.com",
+                "recruitee.com"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "Microsoft PowerPoint",
+            "process" : "identifier.UBF8T346G9/com.microsoft.Powerpoint",
+            "remote" : "any"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Microsoft PowerPoint - domains",
+            "process" : "identifier.UBF8T346G9/com.microsoft.Powerpoint",
+            "remote-domains" : "azurewebsites.net"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Microsoft AutoUpdate",
+            "process" : "identifier.UBF8T346G9/com.microsoft.autoupdate.fba",
+            "remote-domains" : "azurewebsites.net"
+        },
+        {
+            "action" : "allow",
+            "direction" : "both",
+            "notes" : "Microsoft Teams",
+            "process" : "identifier.UBF8T346G9/com.microsoft.teams2",
+            "remote" : "any"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Microsoft To Do",
+            "process" : "identifier.UBF8T346G9/com.microsoft.to-do-mac",
+            "remote-domains" : "msauthimages.net"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Microsoft Word",
+            "process" : "identifier.UBF8T346G9/com.microsoft.Word",
+            "remote-domains" : [
+                "azurewebsites.net",
+                "svc.ms"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "Intune MDM",
+            "process" : "identifier.UBF8T346G9/IntuneMdmDaemon",
+            "remote-domains" : "appcenter.ms"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Rotato",
+            "process" : "identifier.UDGLB23X37/com.mortenjust.Rendermock",
+            "remote-domains" : [
                 "amplitude.com",
                 "graphassets.com",
                 "mixpanel.com",
@@ -794,6 +833,180 @@
                 "rota.to",
                 "rotato.app",
                 "vimeo.com"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "MySQL Workbench",
+            "process" : "identifier.VB5E2TV963/com.oracle.workbench.MySQLWorkbench",
+            "remote-domains" : "ondigitalocean.com"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Cursor",
+            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
+            "remote-domains" : [
+                "anthropic.com",
+                "apphb.com",
+                "claude.ai",
+                "claude.com",
+                "cursor-cdn.com",
+                "cursor.com",
+                "cursor.sh",
+                "cursorapi.com",
+                "datadoghq.com",
+                "docker.com",
+                "docker.io",
+                "exp-tas.com",
+                "ghcr.io",
+                "influxdata.com",
+                "open-vsx.org",
+                "python-httpx.org",
+                "railway.app",
+                "segment.io",
+                "shields.io",
+                "textualize.io",
+                "vercel-storage.com"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "Cursor via Python 3.14",
+            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
+            "remote" : "any",
+            "via" : "path.opt/homebrew/Cellar/python@3.14/*/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Cursor via Python 3.13 - Azure & Microsoft",
+            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
+            "remote-domains" : [
+                "microsoft.com",
+                "microsoftonline.com",
+                "visualstudio.com",
+                "windows.net"
+            ],
+            "via" : "path.opt/homebrew/Cellar/python@3.13/*/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Cursor via Node - development tools",
+            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
+            "remote-domains" : [
+                "googleapis.com",
+                "gstatic.com",
+                "nodejs.org",
+                "npmjs.org",
+                "prisma.sh"
+            ],
+            "via" : "path.opt/homebrew/Cellar/node/*/bin/node"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Cursor via gh - GitHub CLI",
+            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
+            "remote-domains" : [
+                "github.com",
+                "githubusercontent.com"
+            ],
+            "via" : "path.opt/homebrew/Cellar/gh/*/bin/gh"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Cursor via Supabase CLI",
+            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
+            "remote-domains" : "supabase.co",
+            "via" : "path.opt/homebrew/Cellar/supabase/*/bin/supabase"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Cursor via PostgreSQL",
+            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
+            "remote-domains" : "supabase.com",
+            "via" : "path.opt/homebrew/Cellar/postgresql@14/*/bin/psql"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Cursor via Selenium",
+            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
+            "remote-domains" : [
+                "github.io",
+                "googleapis.com",
+                "plausible.io"
+            ],
+            "via" : "path.*/Library/Python/*/lib/python/site-packages/selenium/webdriver/common/macos/selenium-manager"
+        },
+        {
+            "action" : "allow",
+            "notes" : "NordVPN",
+            "process" : "identifier.W5W395V82Y/com.nordvpn.macos",
+            "remote" : "any"
+        },
+        {
+            "action" : "deny",
+            "notes" : "NordVPN Helper - block telemetry",
+            "process" : "identifier.W5W395V82Y/com.nordvpn.macos.helper",
+            "remote-domains" : [
+                "crashlytics.com",
+                "googleapis.com"
+            ]
+        },
+        {
+            "action" : "allow",
+            "direction" : "both",
+            "notes" : "Gather",
+            "process" : "identifier.W28UKP642P/com.gather.GatherV2",
+            "remote-addresses" : [
+                "3.33.230.94",
+                "15.197.182.181"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "iStat Menus",
+            "process" : "identifier.Y93TK974AT/com.bjango.istatmenus",
+            "remote" : "any"
+        },
+        {
+            "action" : "deny",
+            "notes" : "Sublime Text - block license check",
+            "process" : "identifier.Z6D26JE4Y4/com.sublimetext.4",
+            "remote-domains" : "sublimetext.com"
+        },
+        {
+            "action" : "allow",
+            "notes" : "OpenVPN",
+            "process" : "identifier.ACV7L3WCD8/org.openvpn.client.app",
+            "remote" : "any"
+        },
+        {
+            "action" : "allow",
+            "notes" : "OpenVPN Helper",
+            "process" : "identifier.ACV7L3WCD8/org.openvpn.client.app.helper",
+            "remote" : "any"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Ninox",
+            "process" : "identifier.BJE6SD455T/de.ninoxdb.ninox-mac.Ninox",
+            "remote-domains" : [
+                "ninox.com",
+                "sentry.io"
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "GitHub CLI tool",
+            "process" : "path.opt/homebrew/Cellar/gh/*/bin/gh",
+            "remote-domains" : "github.com"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Python 3.14 - package management",
+            "process" : "path.opt/homebrew/Cellar/python@3.14/*/Frameworks/Python.framework/Versions/3.14/Resources/Python.app/Contents/MacOS/Python",
+            "remote-domains" : [
+                "pypi.org",
+                "pythonhosted.org"
             ]
         }
     ]
