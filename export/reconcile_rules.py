@@ -79,6 +79,7 @@ Produce an **updated version of each golden file** that incorporates the incomin
 5. **Logical grouping** — Within each golden file, keep rules grouped logically (by app/vendor in Custom Apps, by category in Trusted Domains). Maintain the existing `notes` field style.
 6. **Deny-vs-allow sanity** — If an incoming rule allows something that the golden file explicitly denies (or vice versa), flag the conflict and recommend a resolution.
 7. **Low Data candidates** — If you see incoming deny rules that block an entire process with `remote: any` and `direction: both`, those belong in Low Data.
+8. **Via-specific fidelity** — Treat rules with a `via` field as distinct execution contexts. Do NOT consider a non-`via` app rule as coverage for a `via` rule. If incoming contains `via` rules, keep them explicitly unless an equivalent golden rule already exists with the same `process`, `action`, `via`, and target.
 
 ### Output format
 

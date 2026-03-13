@@ -378,14 +378,9 @@
                 "gravatar.com",
                 "linear.app",
                 "slack-edge.com",
+                "statsigapi.net",
                 "youtube.com"
             ]
-        },
-        {
-            "action" : "deny",
-            "notes" : "Linear - block telemetry",
-            "process" : "identifier.7VZ2S3V9RV/com.linear",
-            "remote-domains" : "statsigapi.net"
         },
         {
             "action" : "allow",
@@ -657,14 +652,8 @@
             ]
         },
         {
-            "action" : "deny",
-            "notes" : "Figma Desktop - blocked telemetry",
-            "process" : "identifier.T8RA8NE3B7/com.figma.Desktop",
-            "remote-domains" : "statsigapi.net"
-        },
-        {
             "action" : "allow",
-            "notes" : "Figma Desktop",
+            "notes" : "Figma Desktop - analytics allowed",
             "process" : "identifier.T8RA8NE3B7/com.figma.Desktop",
             "remote-domains" : [
                 "awswaf.com",
@@ -673,6 +662,7 @@
                 "figma.com",
                 "gravatar.com",
                 "prodregistryv2.org",
+                "statsigapi.net",
                 "wp.com"
             ]
         },
@@ -878,6 +868,44 @@
         },
         {
             "action" : "allow",
+            "notes" : "Cursor via Python 3.13 - Azure services",
+            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
+            "remote-domains" : [
+                "azure.com",
+                "azure.net"
+            ],
+            "via" : "path.opt/homebrew/Cellar/python@3.13/*/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Cursor via Node - Azure containers",
+            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
+            "remote-domains" : "azurecontainerapps.io",
+            "via" : "path.opt/homebrew/Cellar/node/*/bin/node"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Cursor via Supabase CLI - GitHub access",
+            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
+            "remote-domains" : "github.com",
+            "via" : "path.opt/homebrew/Cellar/supabase/*/bin/supabase"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Cursor via Node - Supabase services",
+            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
+            "remote-domains" : "supabase.co",
+            "via" : "path.opt/homebrew/Cellar/node/*/bin/node"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Cursor via Supabase CLI - Supabase services",
+            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
+            "remote-domains" : "supabase.com",
+            "via" : "path.opt/homebrew/Cellar/supabase/*/bin/supabase"
+        },
+        {
+            "action" : "allow",
             "notes" : "Cursor via Python 3.14",
             "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
             "remote" : "any",
@@ -906,7 +934,8 @@
             "remote-addresses" : [
                 "3.33.230.94",
                 "15.197.182.181"
-            ]
+            ],
+            "remote-domains" : "gather.town"
         },
         {
             "action" : "allow",
