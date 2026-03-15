@@ -258,7 +258,6 @@
             "notes" : "MongoDB Compass (domains)",
             "process" : "identifier.4XWMY46275/com.mongodb.compass",
             "remote-domains" : [
-                "azure.com",
                 "mongodb.com",
                 "mongodb.net"
             ]
@@ -381,7 +380,6 @@
                 "figma.com",
                 "githubassets.com",
                 "gravatar.com",
-                "linear.app",
                 "slack-edge.com",
                 "statsigapi.net",
                 "youtube.com"
@@ -841,9 +839,6 @@
             "notes" : "Cursor",
             "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
             "remote-domains" : [
-                "azure.com",
-                "azure.net",
-                "azurecontainerapps.io",
                 "anthropic.com",
                 "apphb.com",
                 "claude.ai",
@@ -856,17 +851,9 @@
                 "docker.com",
                 "docker.io",
                 "exp-tas.com",
-                "github.com",
                 "github.io",
-                "githubusercontent.com",
-                "googleapis.com",
-                "gstatic.com",
                 "ghcr.io",
                 "influxdata.com",
-                "microsoft.com",
-                "microsoftonline.com",
-                "nodejs.org",
-                "npmjs.org",
                 "open-vsx.org",
                 "plausible.io",
                 "prisma.sh",
@@ -874,51 +861,9 @@
                 "railway.app",
                 "segment.io",
                 "shields.io",
-                "supabase.co",
-                "supabase.com",
                 "textualize.io",
-                "vercel-storage.com",
-                "visualstudio.com",
-                "windows.net"
+                "vercel-storage.com"
             ]
-        },
-        {
-            "action" : "allow",
-            "notes" : "Cursor via Python 3.13 - Azure services",
-            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
-            "remote-domains" : [
-                "azure.com",
-                "azure.net"
-            ],
-            "via" : "path.opt/homebrew/Cellar/python@3.13/*/Frameworks/Python.framework/Versions/3.13/Resources/Python.app/Contents/MacOS/Python"
-        },
-        {
-            "action" : "allow",
-            "notes" : "Cursor via Node - Azure containers",
-            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
-            "remote-domains" : "azurecontainerapps.io",
-            "via" : "path.opt/homebrew/Cellar/node/*/bin/node"
-        },
-        {
-            "action" : "allow",
-            "notes" : "Cursor via Supabase CLI - GitHub access",
-            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
-            "remote-domains" : "github.com",
-            "via" : "path.opt/homebrew/Cellar/supabase/*/bin/supabase"
-        },
-        {
-            "action" : "allow",
-            "notes" : "Cursor via Node - Supabase services",
-            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
-            "remote-domains" : "supabase.co",
-            "via" : "path.opt/homebrew/Cellar/node/*/bin/node"
-        },
-        {
-            "action" : "allow",
-            "notes" : "Cursor via Supabase CLI - Supabase services",
-            "process" : "identifier.VDXQ22DGB9/com.todesktop.230313mzl4w4u92",
-            "remote-domains" : "supabase.com",
-            "via" : "path.opt/homebrew/Cellar/supabase/*/bin/supabase"
         },
         {
             "action" : "allow",
