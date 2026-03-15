@@ -614,6 +614,7 @@
                 "dremio.com",
                 "facebook.net",
                 "figma.com",
+                "googletagmanager.com",
                 "hhs.gov",
                 "honeycomb.io",
                 "hs-scripts.com",
@@ -929,13 +930,22 @@
         {
             "action" : "allow",
             "direction" : "both",
-            "notes" : "Gather",
+            "notes" : "Gather - virtual office app",
             "process" : "identifier.W28UKP642P/com.gather.GatherV2",
             "remote-addresses" : [
                 "3.33.230.94",
                 "15.197.182.181"
             ],
-            "remote-domains" : "gather.town"
+            "remote-domains" : [
+                "assetsconfigcdn.org",
+                "cloudflare-dns.com",
+                "cloudflare.com",
+                "featureassets.org",
+                "gather.town",
+                "googletagmanager.com",
+                "newrelic.com",
+                "us-east-2.amazonaws.com"
+            ]
         },
         {
             "action" : "allow",
