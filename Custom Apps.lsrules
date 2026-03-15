@@ -255,13 +255,18 @@
         },
         {
             "action" : "allow",
-            "notes" : "MongoDB Compass",
+            "notes" : "MongoDB Compass (domains)",
             "process" : "identifier.4XWMY46275/com.mongodb.compass",
             "remote-domains" : [
                 "azure.com",
                 "mongodb.com",
                 "mongodb.net"
-            ],
+            ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "MongoDB Compass (hosts)",
+            "process" : "identifier.4XWMY46275/com.mongodb.compass",
             "remote-hosts" : "api.segment.io"
         },
         {
@@ -510,9 +515,8 @@
         },
         {
             "action" : "allow",
-            "notes" : "Notion Mail",
+            "notes" : "Notion Mail (domains)",
             "process" : "identifier.LBQJ96FQ8D/notion.mail.id",
-            "remote-addresses" : "104.18.37.97",
             "remote-domains" : [
                 "decagon.ai",
                 "featureassets.org",
@@ -521,6 +525,12 @@
                 "s3-us-west-2.amazonaws.com",
                 "splunkcloud.com"
             ]
+        },
+        {
+            "action" : "allow",
+            "notes" : "Notion Mail (addresses)",
+            "process" : "identifier.LBQJ96FQ8D/notion.mail.id",
+            "remote-addresses" : "104.18.37.97"
         },
         {
             "action" : "allow",
@@ -594,9 +604,14 @@
         },
         {
             "action" : "allow",
-            "notes" : "Claude Desktop - Anthropic app",
+            "notes" : "Claude Desktop - Anthropic app IP",
             "process" : "identifier.Q6L2SF6YDW/com.anthropic.claudefordesktop",
-            "remote-addresses" : "179.60.195.12",
+            "remote-addresses" : "179.60.195.12"
+        },
+        {
+            "action" : "allow",
+            "notes" : "Claude Desktop - Anthropic app domains",
+            "process" : "identifier.Q6L2SF6YDW/com.anthropic.claudefordesktop",
             "remote-domains" : [
                 "ahrefs.com",
                 "anthropic.com",
@@ -930,12 +945,8 @@
         {
             "action" : "allow",
             "direction" : "both",
-            "notes" : "Gather - virtual office app",
+            "notes" : "Gather - virtual office app (domains)",
             "process" : "identifier.W28UKP642P/com.gather.GatherV2",
-            "remote-addresses" : [
-                "3.33.230.94",
-                "15.197.182.181"
-            ],
             "remote-domains" : [
                 "assetsconfigcdn.org",
                 "cloudflare-dns.com",
@@ -945,6 +956,16 @@
                 "googletagmanager.com",
                 "newrelic.com",
                 "us-east-2.amazonaws.com"
+            ]
+        },
+        {
+            "action" : "allow",
+            "direction" : "both",
+            "notes" : "Gather - virtual office app (addresses)",
+            "process" : "identifier.W28UKP642P/com.gather.GatherV2",
+            "remote-addresses" : [
+                "3.33.230.94",
+                "15.197.182.181"
             ]
         },
         {

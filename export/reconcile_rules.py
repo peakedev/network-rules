@@ -105,6 +105,7 @@ The `golden_files` values must be complete, valid lsrules JSON objects (with `de
 - Sort rules logically within each file (by process, then action).
 - Use the same JSON field names as Little Snitch (`action`, `process`, `remote-domains`, `remote-addresses`, `remote-hosts`, `remote`, `ports`, `protocol`, `direction`, `via`, `disabled`, `notes`).
 - Only include fields that have values; don't add empty or null fields.
+- Target selectors are mutually exclusive per rule: use only one of `remote-domains`, `remote-addresses`, `remote-hosts`, or `remote`. If a process needs both an IP and domains, emit separate rules.
 - For `remote-domains` and similar array fields: use a bare string when there's only one value, use an array when there are multiple.
 - Return ONLY the JSON object, no markdown fences, no extra text.
 """
@@ -203,6 +204,34 @@ def parse_response(raw_text):
         sys.exit(1)
 
 
+TARGET_SELECTORS = ("remote-domains", "remote-addresses", "remote-hosts", "remote")
+
+
+def split_mixed_target_rules(data):
+    """
+    Ensure each rule has at most one target selector.
+    Little Snitch import behaves inconsistently when target selectors are mixed.
+    """
+    rules = data.get("rules", [])
+    normalized = []
+
+    for rule in rules:
+        selectors_present = [k for k in TARGET_SELECTORS if k in rule]
+        if len(selectors_present) <= 1:
+            normalized.append(rule)
+            continue
+
+        # Keep non-target fields and emit one rule per selector.
+        base = {k: v for k, v in rule.items() if k not in TARGET_SELECTORS}
+        for selector in selectors_present:
+            split_rule = dict(base)
+            split_rule[selector] = rule[selector]
+            normalized.append(split_rule)
+
+    data["rules"] = normalized
+    return data
+
+
 def main():
     if load_dotenv:
         load_dotenv(os.path.join(PROJECT_ROOT, ".env"))
@@ -276,6 +305,8 @@ def main():
         if not updated:
             print(f"Warning: no updated content for {name}, skipping.", file=sys.stderr)
             continue
+
+        updated = split_mixed_target_rules(updated)
 
         path = GOLDEN_FILES[name]
         with open(path, "w") as f:
